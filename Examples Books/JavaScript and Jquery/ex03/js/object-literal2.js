@@ -7,6 +7,11 @@ var hotel = {
     }
 };
 
+//hotel.name = 'novo'; new property value use  dot notation
+//hotel['name'] = 'bagunça'; new property use square brackets
+//delete hotel.name; delete the property
+//hotel.name = ''; clear the value of a property;;
+
 var elName = document.getElementById('hotelName');
 elName.textContent = hotel.name;
 
