@@ -1,6 +1,6 @@
 var elements = document.getElementsByTagName('li');
 
-if (elements.length > 0) {
-    var el = elements[0];
+if (elements.length > 3) {
+    var el = elements[3];
     el.className = 'cool';
 }
