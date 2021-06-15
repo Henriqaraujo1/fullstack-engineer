@@ -49,6 +49,33 @@ const _ = {
         }
         return invertedObject
     },
+    findKey(object, predicate) {
+        for (var key in object) {
+            let value = object[key]
+            let predicateReturnValue = predicate(value)
+
+            if(predicateReturnValue) {
+                return key
+            }
+        }
+        undefined
+        return undefined
+    },
+    drop:function(array, n) {
+        if(n===undefined){
+            n=1
+        }
+        let droppedArray = array.slice(n)
+        return droppedArray
+    },
+    dropWhile: function(array,predicate) {
+        let dropNumber = array.findIndex(function(element,index) {
+            return !predicate(element, index, array)
+        });
+
+        let droppedArray = this.drop(dropNumber)
+        return droppedArray;
+    }
 }
 
 
