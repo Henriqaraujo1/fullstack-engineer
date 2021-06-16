@@ -65,17 +65,31 @@ const _ = {
         if(n===undefined){
             n=1
         }
-        let droppedArray = array.slice(n)
+        let droppedArray = array.slice(n, array.length)
         return droppedArray
     },
-    dropWhile: function(array,predicate) {
-        let dropNumber = array.findIndex(function(element,index) {
+    dropWhile(array,predicate) {
+        const dWhile = (element, index) => {
             return !predicate(element, index, array)
-        });
+        }
+        let dropNumber = array.findIndex(dWhile);
 
-        let droppedArray = this.drop(dropNumber)
+        let droppedArray = this.drop(array, dropNumber)
         return droppedArray;
-    }
+    },
+    chunk(array, size) {
+        if(size === undefined) {
+            size = 1;
+        }
+
+        arrayChunks = [];
+
+        for (var i =0; i < array.length; i += size){
+            let arrayChunk = array.slice(i, i+size)
+            arrayChunks.push(arrayChunk)
+        }
+        return arrayChunks
+     }
 }
 
 
