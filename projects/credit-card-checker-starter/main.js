@@ -24,36 +24,61 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
-const validateCred = args => {
-    let nDigits = args                                  //call the array
-    let lastNumber = nDigits[nDigits.length - 1]        //Create Variable to assign the last number of card    
-    nDigits.pop(nDigits[nDigits.length - 1])            //Remove the last number of the assign
-    // // console.log(lastNumber)
-    // console.log(nDigits.length)
-    nDigits.reverse()
-    let par
-    let impar
+const validateCred = cardTest => {
+    let par, impar, sum = 0
     let newArray = []
+    let nDigits = cardTest                                //call the array
+    let lastNumber = nDigits[nDigits.length - 1]        //Create Variable to assign the last number of card    
+    console.log(lastNumber)
+    nDigits.pop(nDigits[nDigits.length - 1])            //Remove the last number of the assign
+    nDigits.reverse()
+    const reducer = (a, b) => a+b
     for (var i =0; i < nDigits.length; i++) {
         if (i % 2 === 0){
-            par = nDigits[i] * 2
-            if(par > 9) {
-                par = par - 9
-                newArray.push(par)
-            } else{
-                newArray.push(par)
+            par = nDigits[i]
+            console.log(`posição ${i}: ${nDigits[i]}`)
+            newArray.push(par)
+        } else {       
+            //console.log(nDigits)
+            //console.log(`antes: ${nDigits[i]}`)     
+            impar = nDigits[i] * 2
+            //console.log(`Resultado: ${impar}`)
+            if(impar > 9) {
+                impar = impar - 9
+                console.log(`posição ${i} Acima de 9: ${impar}`)
+                newArray.push(impar)
+            } else if (impar <= 9){
+                console.log(`posição ${i} abaixo de 9: ${impar}`)
+                newArray.push(impar)
             }
-        } else {
-            impar = nDigits[i]
-            // console.log(`Impar ${i}: ${nDigits[i]}`)
-            newArray.push(impar)
         }
     }
+    console.log(nDigits)
     console.log(newArray)
+    sum = newArray.reduce(reducer) + lastNumber
+    console.log(sum)
+    if(sum % 10 === 0) {
+        return "fala galaera"
+    } else {
+      return false
+    }
 }
+
 validateCred(valid1)
 
+const findInvalidCards = cardArray => {
+    let invalidCard = validateCred(cardArray)
+    const dbInvalidCard = []
+    if(invalidCard === false) {
+        for(var i =0; i < cardArray.length; i++){
+            console.log(cardArray[i])
+            dbInvalidCard.push(cardArray[i])
+        }
+    }
+    console.log(dbInvalidCard.length)
+}
 
+// findInvalidCards(invalid1)
 
 
 
