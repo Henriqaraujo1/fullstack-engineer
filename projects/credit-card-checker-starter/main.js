@@ -24,9 +24,34 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
-
-
-
+const validateCred = args => {
+    let nDigits = args                                  //call the array
+    let lastNumber = nDigits[nDigits.length - 1]        //Create Variable to assign the last number of card    
+    nDigits.pop(nDigits[nDigits.length - 1])            //Remove the last number of the assign
+    // // console.log(lastNumber)
+    // console.log(nDigits.length)
+    nDigits.reverse()
+    let par
+    let impar
+    let newArray = []
+    for (var i =0; i < nDigits.length; i++) {
+        if (i % 2 === 0){
+            par = nDigits[i] * 2
+            if(par > 9) {
+                par = par - 9
+                newArray.push(par)
+            } else{
+                newArray.push(par)
+            }
+        } else {
+            impar = nDigits[i]
+            // console.log(`Impar ${i}: ${nDigits[i]}`)
+            newArray.push(impar)
+        }
+    }
+    console.log(newArray)
+}
+validateCred(valid1)
 
 
 
