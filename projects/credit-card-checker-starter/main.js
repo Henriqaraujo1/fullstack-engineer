@@ -47,9 +47,8 @@ const validateCred =  cardTest => {
                 newArray.push(par)
             }
         } else {       
-            
             impar = nDigits[i]
-            console.log(`posição ${i}: ${nDigits[i]}`)
+            console.log(`posição impar ${i}: ${nDigits[i]}`)
             newArray.push(impar)
         }
     }
