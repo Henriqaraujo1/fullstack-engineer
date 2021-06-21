@@ -57,6 +57,16 @@ function validateCred(cardTest){
     }
 }
 
+const getValidCards = cardsValid => {
+    let resultValidCards = []
+    for (var key in cardsValid){
+        if(validateCred(cardsValid[key])){
+            resultValidCards.push(cardsValid[key])
+        }
+    }
+    console.log(`That is the Number of cards valid: ${resultValidCards.length}`)
+    return resultValidCards
+}
 
 const findInvalidCards = cardArray => {
     let resultCard = []
@@ -106,5 +116,5 @@ const idInvalidCardCompanies = cardCompanies => {
     return companies
 }
 
-getValidCards()
+getValidCards(batch)
 idInvalidCardCompanies(batch)
