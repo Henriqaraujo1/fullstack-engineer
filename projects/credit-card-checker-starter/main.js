@@ -25,56 +25,86 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // Add your functions below:
 
-const validateCred =  cardTest => {
+function validateCred(cardTest){
     let par, impar, sum = 0
-    let newArray = []
-    let nDigits = cardTest                                //call the array
+    let validCard = []
+    let nDigits = cardTest.slice()                                //call the array
     let lastNumber = nDigits[nDigits.length - 1]        //Create Variable to assign the last number of card    
-    console.log(lastNumber)
     nDigits.pop(nDigits[nDigits.length - 1])            //Remove the last number of the assign
     nDigits.reverse()
     const reducer = (a, b) => a+b
     for (var i =0; i < nDigits.length; i++) {
         if (i % 2 === 0){
             par = nDigits[i] * 2
-            //console.log(`Resultado: ${impar}`)
             if(par > 9) {
                 par = par - 9
-                console.log(`posição ${i} Acima de 9: ${par}`)
-                newArray.push(par)
+                validCard.push(par)
             } else if (par <= 9){
-                console.log(`posição ${i} abaixo de 9: ${par}`)
-                newArray.push(par)
+                validCard.push(par)
             }
         } else {       
             impar = nDigits[i]
-            console.log(`posição impar ${i}: ${nDigits[i]}`)
-            newArray.push(impar)
+            validCard.push(impar)
         }
     }
-    //console.log(nDigits)
-    console.log(newArray)
-    sum = newArray.reduce(reducer) + lastNumber
-    console.log(sum)
+    //console.log(newArray)
+    //console.log(cardTest)
+    sum = validCard.reduce(reducer) + lastNumber 
     if(sum % 10 === 0) {
-      return true
+        return true
     } else {
-      return false
+        return false
     }
 }
 
-validateCred(valid1)
 
 const findInvalidCards = cardArray => {
-    let invalidCard = validateCred(cardArray)
-    const dbInvalidCard = []
-    if(invalidCard === false) {
-        for(var i =0; i < cardArray.length; i++){
-            console.log(cardArray[i])
-            dbInvalidCard.push(cardArray[i])
+    let resultCard = []
+    for(var key in cardArray) {
+            if(!validateCred(cardArray[key])){
+                resultCard.push(cardArray[key])
+            }
         }
+        console.log(`That is the number of cards invalid: ${resultCard.length}`)
+        return resultCard
     }
-    console.log(dbInvalidCard.length)
+        
+
+
+const idInvalidCardCompanies = cardCompanies => {
+    const companies = [];
+    let getInvalidCards = findInvalidCards(cardCompanies)
+        for(var i=0; i < getInvalidCards.length; i++){
+                switch(getInvalidCards[i][0]) {
+                    case 3:
+                        if(companies.indexOf("Amex") === -1) {
+                            companies.push("Amex")
+                            }
+                        break
+                    case 4:    
+                        if(companies.indexOf("Visa") === -1) {
+                            companies.push("Visa")      
+                            }
+                        break     
+                    case 5:
+                        if(companies.indexOf("MasterCard") === -1) {
+                            companies.push('MasterCard')
+                        }
+                        break
+                    case 6:
+                        if(companies.indexOf('Discover') === -1) {
+                            companies.push('Discover')
+                        }
+                        break
+                    default:
+                        console.log("Company not found")    
+                    
+                }
+        
+    }
+    console.log(companies)
+    return companies
 }
 
-// findInvalidCards(invalid1)
+getValidCards()
+idInvalidCardCompanies(batch)
