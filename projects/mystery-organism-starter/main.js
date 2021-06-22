@@ -14,9 +14,42 @@ const mockUpStrand = () => {
 };
 
 
+const pAequorFactory = (number,args) => {
+  return {
+    specimenNum: number,
+    dna: args,
+    mutate: function(dna){
+        let randomDna = []
+        for(var i=0; i < 4; i++){
+          randomDna[i] = returnRandBase().slice()
+          switch(randomDna[i]){
+            case "A":
+              // if(randomDna
+              break;
+            default:
+              console.log('A não foi o primeiro')
+              /*We have progress to create the base, but can't 
+              put the rule of letter A in other position*/
+          }
+        }
+        console.log(randomDna)
+        // switch(randomDna){
+        //   case 'A':
+        //     dna =  [0,randomDna]
+        //     break;
+        //   case 'T':
+        //     break;
+        //   case 'C':
+        //     break;
+        //   case 'G': 
+        //     break;
+        //   default:
+        //     console.log('Don\'t found the DNA')  
+        // }
+      }
+    }
+  }
 
 
-
-
-
-
+const pAequor = pAequorFactory(2)
+pAequor.mutate()
