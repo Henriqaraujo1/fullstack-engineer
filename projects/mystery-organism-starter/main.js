@@ -18,50 +18,38 @@ const pAequorFactory = (number,args) => {
   return {
     specimenNum: number,
     dna: args,
-    mutate: function(dna){
+    mutate: function(){
         let randomDna = []
-        // let test = addBases[Math.floor(Math.random() * 4)];
-        let count = 0
-        console.log(`antes de mudar ${dna}`)
         do{
-          let addBases = this.dna[Math.floor(Math.random() * 4)]
-          console.log(addBases)
-          switch(addBases){
-            case "T":
-              if(!randomDna.includes("T")){
-                randomDna.push("T")
-              }
-              break
-            case "G":
-              if(!randomDna.includes("G")){
-                randomDna.push("G")
-              }
-              break
-            case "C":
-              if(!randomDna.includes("C")){
-                randomDna.push("C")
-              }
-              break
-            case "A":
-              if(!randomDna.includes("A")){
-                randomDna.push("A")
-              }if(randomDna[0] === "A"){
-                randomDna.shift("A")
-              }
-              break
+          let addBases = returnRandBase(this.dna)
+          randomDna.push(addBases)
+        /*  If needs don't repeat the element inside the array, use this IF 
+         * if(!randomDna.includes(addBases)){ 
+         *    randomDna.push(addBases)*/
+          if(randomDna[0] === "A"){
+            randomDna.shift("A")
           }
-
-      } while(randomDna.length < 4)
+      } while(randomDna.length < 15)
       console.log(randomDna)
       return randomDna
     },
     compareDNA(pAequor){
-      console.log(pAequor)
+      let ex1 = pAequor
+      let ex2 = this.mutate()
+      let count = 0
+      for(var i=0; i < ex2.length; i++){
+        if(ex1[i] === ex2[i]){
+          count++
+        }
+        let common = ((100/pAequor.dna.length) * count).toFixed(2)
+        console.log(common)
+      }
     }
   }
 }
 
 
-const pAequor = pAequorFactory(1,['A','G','T','C'])
-console.log(pAequor.dna)
-pAequor.mutate()
+const pAequor = pAequorFactory(1,["A","T","C","G"])
+// pAequor.specimenNum = 5
+//pAequor.mutate()
+pAequor.compareDNA(["A","T","C","G"])
