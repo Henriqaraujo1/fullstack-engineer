@@ -20,36 +20,48 @@ const pAequorFactory = (number,args) => {
     dna: args,
     mutate: function(dna){
         let randomDna = []
-        for(var i=0; i < 4; i++){
-          randomDna[i] = returnRandBase().slice()
-          switch(randomDna[i]){
+        // let test = addBases[Math.floor(Math.random() * 4)];
+        let count = 0
+        console.log(`antes de mudar ${dna}`)
+        do{
+          let addBases = this.dna[Math.floor(Math.random() * 4)]
+          console.log(addBases)
+          switch(addBases){
+            case "T":
+              if(!randomDna.includes("T")){
+                randomDna.push("T")
+              }
+              break
+            case "G":
+              if(!randomDna.includes("G")){
+                randomDna.push("G")
+              }
+              break
+            case "C":
+              if(!randomDna.includes("C")){
+                randomDna.push("C")
+              }
+              break
             case "A":
-              // if(randomDna
-              break;
-            default:
-              console.log('A não foi o primeiro')
-              /*We have progress to create the base, but can't 
-              put the rule of letter A in other position*/
+              if(!randomDna.includes("A")){
+                randomDna.push("A")
+              }if(randomDna[0] === "A"){
+                randomDna.shift("A")
+              }
+              break
           }
-        }
-        console.log(randomDna)
-        // switch(randomDna){
-        //   case 'A':
-        //     dna =  [0,randomDna]
-        //     break;
-        //   case 'T':
-        //     break;
-        //   case 'C':
-        //     break;
-        //   case 'G': 
-        //     break;
-        //   default:
-        //     console.log('Don\'t found the DNA')  
-        // }
-      }
+
+      } while(randomDna.length < 4)
+      console.log(randomDna)
+      return randomDna
+    },
+    compareDNA(pAequor){
+      console.log(pAequor)
     }
   }
+}
 
 
-const pAequor = pAequorFactory(2)
+const pAequor = pAequorFactory(1,['A','G','T','C'])
+console.log(pAequor.dna)
 pAequor.mutate()
