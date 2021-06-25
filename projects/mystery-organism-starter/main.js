@@ -21,7 +21,7 @@ const pAequorFactory = (number,args) => {
     mutate: function(){
         let randomDna = []
         do{
-          let addBases = returnRandBase(this.dna)
+          let addBases = returnRandBase(this.dna.splice())
           randomDna.push(addBases)
         /*  If needs don't repeat the element inside the array, use this IF 
          * if(!randomDna.includes(addBases)){ 
@@ -33,23 +33,46 @@ const pAequorFactory = (number,args) => {
       console.log(randomDna)
       return randomDna
     },
-    compareDNA(pAequor){
-      let ex1 = pAequor
-      let ex2 = this.mutate()
+    compareDNA(){
+      let ex1 = pAequor1.dna
+      let ex2 = pAequor2.dna
       let count = 0
       for(var i=0; i < ex2.length; i++){
         if(ex1[i] === ex2[i]){
           count++
         }
-        let common = ((100/pAequor.dna.length) * count).toFixed(2)
-        console.log(common)
       }
-    }
+      let common = ((100/ex2.length) * count).toFixed(2)
+        console.log(`the specimen ${pAequor1.specimenNum} and specimen ${pAequor2.specimenNum} have ${common} DNA in common`)
+    } ,
+    willLikelySurvive() {
+      let surviveDna = this.dna
+      console.log(surviveDna)
+      let count = 0
+      for(var i=0; i < surviveDna.length; i++){
+        
+        if(surviveDna[i] === "C" || surviveDna[i] === "G") {
+          count++
+        }
+        if(count >= 9){
+          return true
+        } else {
+          return false
+        }
+      }
+    }  
   }
 }
-
-
-const pAequor = pAequorFactory(1,["A","T","C","G"])
-// pAequor.specimenNum = 5
-//pAequor.mutate()
-pAequor.compareDNA(["A","T","C","G"])
+let dbStudy = []
+for(var i =0; i < 30; i++){
+  let instances = pAequorFactory(i, mockUpStrand())
+  if(instances.willLikelySurvive()){
+    dbStudy.push(instances)
+  }
+}
+// const pAequor1 = pAequorFactory(1,mockUpStrand())
+// const pAequor2= pAequorFactory(2, mockUpStrand())
+// console.log(`The Base of the pAequor1 ${pAequor1.mutate()}`)
+// console.log(`The Base of the pAequor2 ${pAequor2.dna}`)
+// pAequor2.compareDNA()
+// pAequor1.willLikelySurvive()
