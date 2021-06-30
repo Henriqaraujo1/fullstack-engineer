@@ -1,0 +1,418 @@
+[33mcommit c902beee108158d0488d53d26435d6ff6c988f1b[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop-coringa[m[33m, [m[1;31morigin/develop-coringa[m[33m)[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Wed Jun 23 17:28:15 2021 -0300
+
+    finished step 5
+
+[33mcommit 2475b339f518036b6539e72e78cf93fdd585fac4[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: 3ea4f09 aac9d2c
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Tue Jun 22 23:26:23 2021 -0300
+
+    Merge pull request #21 from Henriqaraujo1/develop
+    
+    complete step four
+
+[33mcommit aac9d2c4ed7dd9f73a1c3e0839ad3e070db81391[m[33m ([m[1;31morigin/develop[m[33m)[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Tue Jun 22 23:24:56 2021 -0300
+
+    complete step four
+
+[33mcommit 3ea4f091f1be8e5a87f53c3cd477cfd87741770c[m
+Merge: ed740ee 8c1eda0
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Tue Jun 22 14:19:47 2021 -0300
+
+    Merge pull request #20 from Henriqaraujo1/develop
+    
+    start project of mysterious Organism
+
+[33mcommit 8c1eda09f7f0ad1d3873f53a2c683383b7b494bd[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon Jun 21 23:21:19 2021 -0300
+
+    start project of mysterious Organism
+
+[33mcommit ed740eed2b5bb44a0aac9190fb51a02bed640d80[m
+Merge: 12eb024 659d598
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon Jun 21 21:50:07 2021 -0300
+
+    Merge pull request #19 from Henriqaraujo1/develop
+    
+    new project codecademy mystery organism
+
+[33mcommit 659d5984f37faa243357d052a11b631497a59741[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon Jun 21 21:49:35 2021 -0300
+
+    new project codecademy mystery organism
+
+[33mcommit 12eb0249eb4f03cc4d9de1942aaa642e747505ad[m
+Merge: 903ad73 a97408e
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon Jun 21 17:21:03 2021 -0300
+
+    Merge pull request #18 from Henriqaraujo1/develop-coringa
+    
+    100% complete of project credit card
+
+[33mcommit a97408e150c46a4ec118b70bbc2cc9760a14357b[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon Jun 21 17:20:16 2021 -0300
+
+    100% complete of project credit card
+
+[33mcommit 903ad739e1db26068650c71abd7deaa49f931819[m
+Merge: d7475a1 3dff3ca
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon Jun 21 17:15:09 2021 -0300
+
+    Merge pull request #17 from Henriqaraujo1/develop-coringa
+    
+    90% complete of project credit card
+
+[33mcommit 3dff3ca119a2db51bb23f6f5fae55e7b4a2d3e3c[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon Jun 21 17:14:32 2021 -0300
+
+    90% complete of project credit card
+
+[33mcommit d7475a1a144dc03f03a78ecc678b1cdd3627a356[m
+Merge: 5a56025 c6d6024
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sat Jun 19 09:59:20 2021 -0300
+
+    Merge pull request #16 from Henriqaraujo1/develop-coringa
+    
+    Develop coringa
+
+[33mcommit c6d6024463be82be6e05c086cbc4d68f903f4d32[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sat Jun 19 09:53:15 2021 -0300
+
+    finished validate card credit
+
+[33mcommit e3d416f8b14628b3bb44025b6899fe87575cbd30[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sat Jun 19 09:50:57 2021 -0300
+
+    finished validate card credit
+
+[33mcommit 57373e85eba4385b1c66ae2846779a3a3c7a103b[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sat Jun 19 09:49:27 2021 -0300
+
+    finished validate card credit
+
+[33mcommit 5a56025153744c0317bc62fdc3e581816c6b07ab[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sat Jun 19 09:46:22 2021 -0300
+
+    Delete main.js
+
+[33mcommit 21a6afc11ff5d142346b7fb2b94cdfb84dc8bf76[m
+Merge: 95887ca 36aa506
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sat Jun 19 09:45:42 2021 -0300
+
+    Merge pull request #15 from Henriqaraujo1/develop-coringa
+    
+    Develop coringa
+
+[33mcommit 36aa50696bc4e4f27716bdefa22fdddf070bf0ed[m
+Merge: 73fc3e9 95887ca
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sat Jun 19 08:35:05 2021 -0300
+
+    Merge branch 'master' of https://github.com/Henriqaraujo1/fullstack-engineer into develop-coringa
+
+[33mcommit 95887caa1d98efae696cc757e18f5f69683b48fe[m
+Merge: a92c68e b7c70db
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Fri Jun 18 23:56:11 2021 -0300
+
+    Merge pull request #14 from Henriqaraujo1/develop
+    
+    step 4 check
+
+[33mcommit b7c70dbfb67db77b61cc10a4530cbb29eb896230[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Fri Jun 18 23:55:28 2021 -0300
+
+    step 4 check
+
+[33mcommit a92c68e2640e0e02add0853b9a7d03abc52e5450[m
+Merge: ec89e92 fd6260c
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Fri Jun 18 22:47:42 2021 -0300
+
+    Merge pull request #13 from Henriqaraujo1/develop
+    
+    credit card
+
+[33mcommit fd6260c79c5ebf9061e0dd29b2e4dfc7ac0547c4[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Fri Jun 18 22:39:29 2021 -0300
+
+    credit card
+
+[33mcommit 73fc3e99922c635a5edf368d669cf0d5007e375e[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Fri Jun 18 17:30:21 2021 -0300
+
+    credit test
+
+[33mcommit 81a503d5a1a7bc8f0fe1be8f30162efec003c257[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Fri Jun 18 10:07:46 2021 -0300
+
+    credit card project
+
+[33mcommit 72fca0ac3a25e47173b3df6de889bd99b5971c83[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Fri Jun 18 09:56:08 2021 -0300
+
+    rename coringa
+
+[33mcommit 02ebc3fc737335de78ca0565cabb165d37f75fca[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Thu Jun 17 17:18:34 2021 -0300
+
+    continue javascript chapter 06
+
+[33mcommit ec89e9242d0fb7baa49e09eeea189c95320902f5[m
+Merge: 8fe189d 16a6992
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Wed Jun 16 23:30:24 2021 -0300
+
+    Merge pull request #12 from Henriqaraujo1/develop
+    
+    Develop
+
+[33mcommit 16a6992264fd4c94e8aec2623e2d3c0212e6f86f[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Wed Jun 16 23:28:42 2021 -0300
+
+    rename complete
+
+[33mcommit b89807207c96df267bda8bffadf30150f0261e3b[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Tue Jun 15 21:46:39 2021 -0300
+
+    finish lodash
+
+[33mcommit 8fe189deaff0136e0338342fdff53955e7fac04e[m
+Merge: 0a6fa91 76d7375
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Tue Jun 15 14:09:11 2021 -0300
+
+    Merge pull request #11 from Henriqaraujo1/develop
+    
+    change file
+
+[33mcommit 76d7375e2184edb9551b61e8b65a7fecc26c2829[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Tue Jun 15 08:10:40 2021 -0300
+
+    change file
+
+[33mcommit 0a6fa91d41a78c95f7ce0bc15d37c810f50eb671[m
+Merge: 8aae428 05be2ea
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Thu Jun 10 08:45:37 2021 -0300
+
+    Merge pull request #10 from Henriqaraujo1/develop-coringa
+    
+    Develop coringa
+
+[33mcommit 05be2ea1fed3daaa4060ce812475fb0f5d398cde[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Thu Jun 10 08:32:09 2021 -0300
+
+    chapter 06 started
+
+[33mcommit 7112436cbde678e73d4caa760bcef35dc3727909[m
+Merge: 267347a 8aae428
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Thu Jun 10 08:31:26 2021 -0300
+
+    Merge branch 'master' of https://github.com/Henriqaraujo1/fullstack-engineer into develop-coringa
+
+[33mcommit 8aae4281be9e614b37d93ee136b0770c47d4c276[m
+Merge: 1bebcd5 0d04bb3
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Wed Jun 9 23:24:09 2021 -0300
+
+    Merge pull request #9 from Henriqaraujo1/develop
+    
+    Develop
+
+[33mcommit 0d04bb3afed3f232fec659339668ef9a6929be54[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Wed Jun 9 23:18:58 2021 -0300
+
+    refresh test codecademy
+
+[33mcommit 088d5cc5bdc77c72de2a4ef22cc846d3d2f60257[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Wed Jun 9 21:39:06 2021 -0300
+
+    tests codecademy
+
+[33mcommit 44562aa8a2309b5fe3a5a755e2a1ad11a0d9848b[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Wed Jun 9 21:38:47 2021 -0300
+
+    test codecadame
+
+[33mcommit 267347a8993399f676e3dd746ca0f06acdc55055[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon May 17 10:53:57 2021 -0300
+
+    start chapter 6
+
+[33mcommit 4f0793c3cff88b47444c7016ea12d29d682e8dad[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon May 17 10:51:20 2021 -0300
+
+    final chapter 5
+
+[33mcommit 4ffa1960b2e215ceb5ad6b4b36d299ea3f7bb911[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sat May 8 09:58:33 2021 -0300
+
+    javas
+
+[33mcommit 1bebcd5c8de00c25d20a8fd0128ec2292e2ae7e0[m
+Merge: 01bb78a 591d806
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sun May 2 18:53:41 2021 -0300
+
+    Merge pull request #8 from Henriqaraujo1/develop
+    
+    Chapter five not finished
+
+[33mcommit 591d8069206fc45071facbf72fc410b49bacf2ba[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sun May 2 18:52:42 2021 -0300
+
+    Chapter five not finished
+
+[33mcommit 01bb78a2f8783899809bd354a65e0858b7adee44[m
+Merge: de49196 fd14314
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon Apr 26 10:39:26 2021 -0300
+
+    Merge pull request #7 from Henriqaraujo1/develop
+    
+    Final chapter 4
+
+[33mcommit fd14314fc5dfea2fdb04933804bdfb5ed0fdf92d[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon Apr 26 10:38:50 2021 -0300
+
+    Final chapter 4
+
+[33mcommit de49196e381028b6cc97414a0f4eeebef1faab50[m
+Merge: eabddd7 41939f4
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sat Apr 17 08:29:51 2021 -0300
+
+    Merge pull request #6 from Henriqaraujo1/develop-coringa
+    
+    Chapter 4
+
+[33mcommit 41939f4a06b558646c8a60d007191bace3f8d80b[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sat Apr 17 08:27:38 2021 -0300
+
+    Chapter 4
+
+[33mcommit eabddd755d7761229272d16b80b5cb0204c9ad88[m[33m ([m[1;32mmaster[m[33m)[m
+Merge: 34d0f0f 62416fc
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon Apr 12 08:18:42 2021 -0300
+
+    Merge pull request #5 from Henriqaraujo1/develop-coringa
+    
+    Create '
+
+[33mcommit 62416fc902228599acc9571e88298f7c4dc0a1e8[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon Apr 12 08:17:28 2021 -0300
+
+    Create '
+
+[33mcommit 34d0f0f6b407ebd1f83afc21186f8382146a8dd6[m
+Merge: 341c170 d167a68
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sat Apr 10 11:45:25 2021 -0300
+
+    Merge pull request #4 from Henriqaraujo1/develop
+    
+    Final chapter 3
+
+[33mcommit d167a687db0e457ba4a76576c4cec857c36122ca[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Sat Apr 10 11:44:39 2021 -0300
+
+    Final chapter 3
+
+[33mcommit 341c17005b14d57069fff927d2789ed61cece293[m
+Merge: 2c027ec 43bb439
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Fri Apr 9 15:44:58 2021 -0300
+
+    Merge pull request #3 from Henriqaraujo1/develop
+    
+    Exercises of constructor
+
+[33mcommit 43bb4399abb3818824a79d1b6bc68e79db315403[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Fri Apr 9 15:44:11 2021 -0300
+
+    Exercises of constructor
+
+[33mcommit 2c027eccf80465f86584291651bebb2b2afbcbfd[m
+Merge: 903ac4c 28828c1
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Fri Apr 9 12:05:46 2021 -0300
+
+    Merge pull request #2 from Henriqaraujo1/develop
+    
+    update chapter 3 object-literal
+
+[33mcommit 28828c1f57eab2dfaca7ba011f537a216fc1adac[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Fri Apr 9 12:05:10 2021 -0300
+
+    update chapter 3 object-literal
+
+[33mcommit 903ac4c2546b32ae77707346c65de6316a8251cf[m
+Merge: c4fd4ed 1e9561a
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Thu Apr 8 17:34:54 2021 -0300
+
+    Merge pull request #1 from Henriqaraujo1/develop
+    
+    Start the new chapter 3
+
+[33mcommit 1e9561a4c7918035ea129f65dc594822b7bb46fc[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Thu Apr 8 17:33:16 2021 -0300
+
+    Start the new chapter 3
+
+[33mcommit c4fd4ed76ff58b2ecf49a9cd7b33eeb5b229d8e9[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Thu Apr 8 16:35:56 2021 -0300
+
+    Chapter 02 of book JS and Jquery is finished
+
+[33mcommit b7a9d0ec78f9b0086501d80e1b752cfb55b74abc[m
+Author: Henrique Silva <39538139+Henriqaraujo1@users.noreply.github.com>
+Date:   Mon Apr 5 16:17:25 2021 -0300
+
+    fullstack engineer course
