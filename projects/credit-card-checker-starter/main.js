@@ -78,8 +78,6 @@ const findInvalidCards = cardArray => {
         console.log(`That is the number of cards invalid: ${resultCard.length}`)
         return resultCard
     }
-        
-
 
 const idInvalidCardCompanies = cardCompanies => {
     const companies = [];
