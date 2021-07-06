@@ -23,7 +23,8 @@ h1, h2{
 }
 
 p{
-    color: white;
+    color: black;
+    font-size: 30px;
     background-color: #6cc0ac;
     border-radius: 5px;
     text-align: center;
