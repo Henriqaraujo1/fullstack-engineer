@@ -1,8 +1,3 @@
-phrase = 'Today is: '
-motivation = 'You can better '
-travel = 'your next travel is '
-
-
 const randomWord = () =>{
     return Math.floor(Math.random() * 6)
 }
