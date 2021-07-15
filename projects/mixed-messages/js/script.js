@@ -32,5 +32,3 @@ const findWord = () => {
     }
 } 
 
-
-findWord()
