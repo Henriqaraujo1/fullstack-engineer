@@ -1,12 +1,15 @@
-body {
-    background-color: #a9a9a9;
-}
-
+/* Import fonts google */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Ruslan+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100&family=Ruslan+Display&display=swap');
+/* Header Styles */
 header {
     text-align: center;
     font-size: 30px;
 
 }
+
+/* Sections Styles */
 
 section {
     margin: 50px 50px;
@@ -19,11 +22,30 @@ section h1 {
 }
 
 .colors li {
-    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px auto;
     display: inline-block;
-    padding: 60px 60px;
+    padding: 20px;
     border: 1px solid black;
+    text-decoration: none;
 }
+
+.fonts h2 {
+    text-decoration: underline;
+}
+
+.fonts ul{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.fonts li {
+    box-sizing: border-box;
+}
+
+
+/* UL and LI styles by classes */
 
 .blue {
     background-color: blue;
@@ -48,7 +70,47 @@ section h1 {
 .orange-red {
     background-color: #ff4500;
     color: white
+}
 
+/* Fonts styles */
+
+
+
+.firasans{
+    font-family: "Fira Sans", sans-serif;
+}
+
+.libre {
+    font-family: 'Libre Caslon Display', serif;
+}
+
+.lexend {
+   font-family: 'Lexend', serif; 
 }
 
 
+
+/* P have bold and italic */
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Text styles  */
+
+.mainpage h1 {
+    font-family: "Fira Sans";
+    text-align: left;
+    font-weight: bolder;
+}
+
+.subheading {
+    font-family: "Libre Caslon Display";
+}
+
+.paragraph {
+    font-family: "Lexend";
+}
