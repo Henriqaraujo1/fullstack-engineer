@@ -1,0 +1,26 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Style+Script&display=swap');
+
+/* Global Settings */
+body {
+    font-family: 'Cutive Mono', monospace, sans-serif;
+    font-size: 15px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 30px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.title {
+    font-family: 'Style Script', cursive, sans-serif;
+}
+
+.imgs {
+    width: 100px;
+}
