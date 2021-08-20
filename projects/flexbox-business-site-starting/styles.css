@@ -53,9 +53,22 @@ header {
 }
 
 #looks {
-    height: 800px;
+    margin: 0 auto;
 }
 
-.jaqueta {
-    width: 1%;
+.cards-component {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 10px;
+    border: 1px solid black;
+    flex: 0 1 15%;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;;
 }
