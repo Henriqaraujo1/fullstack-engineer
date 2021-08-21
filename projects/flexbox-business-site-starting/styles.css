@@ -20,13 +20,11 @@ header {
     background-image: url('./img/Pink_Watercolor_Texture.jpg');
     background-repeat: no-repeat;
     margin: 0 auto;
-    border-radius: 20px;
 }
 
 .menu {
     display: flex;
     justify-content: space-around;
-    margin: 10px 30px;
 }
 
 .menu a {
@@ -43,6 +41,7 @@ header {
 }
 
 #about {
+    margin-top: 0;
     color: white;
     display: flex;
     flex-direction: column;
@@ -75,9 +74,8 @@ header {
 
 .cards-component {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap:wrap
 }
 
 .card {
@@ -93,6 +91,7 @@ header {
 img {
     max-width: 300px;
     max-height: 300px;
+    border-radius: 20px;
 }
 
 #contact {
@@ -122,3 +121,30 @@ img {
     align-content: center;
     width: 50px
 } 
+
+@media only screen and (max-width: 700px){
+    header {
+        background-size: cover;
+        height:  100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .title {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .menu {
+        font-size: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .cards-component {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
