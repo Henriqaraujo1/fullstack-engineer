@@ -1,0 +1,57 @@
+/* Import fonts */
+@import url("https://use.typekit.net/rzn0icj.css");
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: snow;
+}
+
+.logo {
+    display: flex;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.back {
+    background-image: url('/projects/church-site/img/home.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;  
+    align-items: center;
+}
+
+.title {
+    font-family: great-vibes,sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 40px;
+    color: white;
+    background-color: rgba(41, 72, 212, 0.377);
+}
+
+.menu {
+    font-family: copse, serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 10vh;
+    margin: 0.75em;
+}
+
+
+
+.cards {
+    display: flex;
+}
+
+.card {
+    width: 15%;
+    height: 200px;
+    border: 1px solid green;
+}
