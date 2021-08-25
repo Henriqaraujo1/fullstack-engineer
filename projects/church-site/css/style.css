@@ -11,7 +11,8 @@
     width: 100px;
     margin-top: 10px;
     position: relative;
-    right: 50px;
+    right: 30px;
+    bottom: 10px;
 }
 
 .back {
@@ -41,10 +42,15 @@
     font-family: copse, serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(255, 255 ,158, 0.93)
+    background-color: rgba(255, 255 ,158, 0.93);
+}
+
+i {
+    padding: 10px;
 }
 
 .history {
@@ -86,5 +92,10 @@
 
 .card img {
     max-width: 100%;
-    max-height: 80%;
+    max-height: 60%;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
 }
