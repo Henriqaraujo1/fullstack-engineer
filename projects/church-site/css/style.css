@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+section {
+    height: max-content;
+}
+
 .logo {
     width: 100px;
     margin-top: 10px;
@@ -35,10 +39,11 @@
     background-color: rgba(41, 72, 212, 0.377);
 }
 
+
 .menu {
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    width: 100%;
+    width: 100%; */
     font-family: copse, serif;
     font-weight: 400;
     font-style: normal;
@@ -74,28 +79,26 @@ i {
 
 
 
-.cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.card {
-    height: 300px;
-    width: 300px;
-    margin: 20px;
-    border: 1px solid green;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.card img {
-    max-width: 100%;
-    max-height: 60%;
-}
-
 .events {
     display: flex;
     flex-direction: column;
+}
+
+
+.cards-missa {
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards-missa .card{
+    padding: 0;
+    width: 500px;
+    display: flex;
+}
+
+.cards-missa img {
+    height: 300px;
 }

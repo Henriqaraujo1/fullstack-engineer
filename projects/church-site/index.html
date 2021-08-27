@@ -7,6 +7,7 @@
         <link rel="shortcut icon" href="img/church.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
     <body>
         <header>
@@ -14,7 +15,7 @@
                 <img class="logo" src="./img/pascom.png">
                 <a><i class="bi bi-house-door"></i>Home</a>
                 <a><i class="bi bi-info-circle"></i>Institucional</a>
-                <a><i class="bi bi-calendar-date"></i>Eventos</a>
+                <a href="#events"><i class="bi bi-calendar-date"></i>Eventos</a>
                 <a><i class="bi bi-people"></i>Contato</a>
                 <a><i class="bi bi-box-arrow-in-right"></i>Login</a>
             </nav>
@@ -31,13 +32,13 @@
                 <div class="cards">
                     
                     <div class="card">
-                        <img src="img/sagrado-1.jpg">
+                        <img src="img/sagrado-1.png">
                         <h2>Foto da Igreja em 2013</h2>
                         <p>Uma bela foto da Nossa igreja</p>
                     </div>
-                    <div class="card"><img src="img/sagrado-1.jpg"></div>
-                    <div class="card"><img src="img/sagrado-1.jpg"></div>
-                    <div class="card"><img src="img/sagrado-1.jpg"></div>
+                    <div class="card"><img src="img/sagrado-1.png"></div>
+                    <div class="card"><img src="img/sagrado-1.png"></div>
+                    <div class="card"><img src="img/sagrado-1.png"></div>
 
                 </div>    
             </section>
@@ -46,81 +47,100 @@
                 <p>Com anos de tradição, A paroquia Sagrado Coração de Jesus, hoje com nosso padre Jose Neto temos diversas pastorais que 
                     auxiliam nossa comunidade, desde as crianças com a pastoral da infancia, a crisma dos adultos, outras pastorais que temos é:
                 </p>
-                <div class="cards">
-                    <div class="card">
-                        <img src="./img/pascom.png" alt="">
-                        <h1>Pastoral da Comunicação</h1>
-                        <p>Que tem a missão de levar a palavra de nosso senhor Jesus Cristo, por meio das Redes Sociais</p>
-                    </div>
-                    <div class="card">
-                        <h1>TLC</h1>
-                        <p>Grupo de jovens lideres</p>
-                    </div>
-                    <div class="card">
-                        <h1>Pastoral Da Familia</h1>
-                        <p>Descrição</p>
-                    </div>
-                    <div class="card">
-                        <img src="img/pj.jpg">
-                        <h1>Pastoral da Juventude</h1>
-                        <p>Descrição</p>
-                    </div>
-                    <div class="card">
-                        <img src="img/juventude.jpg">
-                        <h1>Juventude Missionária</h1>
-                        <p>Descrição</p>
-                    </div>
-                    <div class="card">
-                        <img src="img/infancia.jpg">
-                        <h1>Infância e Adolescência Missionária</h1>
-                        <p>Descrição</p>
-                    </div>
-                    <div class="card">
-                        <h1>ECC</h1>
-                        <p>Descrição</p>
-                    </div>
-                    <div class="card">
-                        <img src="img/cebs.jpg">
-                        <h1>CEBs</h1>
-                        <p>Nossa Comunidade eclesiais de base</p>
-                    </div>
-                    <div class="card">
-                        <img src="img/pca.jpg">
-                        <h1>Pastoral dos Coroinhas, acólitos e cerimonialistas</h1>
-                        <p></p>
-                    </div>
-                    <div class="card">
-                        <h1>Pastoral da Crisma</h1>
-                    </div>
-                    <div class="card">
-                        <img src="img/IMG-20210806-WA0005.jpg">
-                        <h1>Pastoral da Arte</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card h-90">
+                                <img class="card-img-top" src="img/pascom.png" alt="pascom">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pascom</h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img class="card-img-top" src="img/cebs.png" alt='cebs'>
+                                <div class="card-body">
+                                    <h5 class="card-title">CEB's</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img class="card-img-top" src="img/infancia.png">
+                                <div class="card-body">
+                                    <h5 class="card-title">Infancia e Adolescência</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-3">
+                                <img class="card-img-top center" src="img/Logo TLC.png">
+                                <div class="card-body">
+                                    <h5 class="card-title">TLC</h5>
+                                    <p class="card-text">Treinamento de Liderança Cristã</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card mb-3">
+                                <img class="card-img-top" src="img/juventude.png" alt="juventude">
+                                <div class="card-body">
+                                    <h5 class="card-title">Juventude Missionaria</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-3">
+                                <img class="card-img-top" src="img/arte.png" alt="arte">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pastoral da Arte</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card mb-3">
+                                <img class="card-img-top" src="img/pca.png" alt="pca">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pastoral dos Coroinhas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img class="card-img-top" src="img/pj.png">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pastoral da Juventude</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                </section>
             </section>
-            <section class="events">
+            <section id="events">
                 <h1>Eventos</h1>
                 <h2>Horario de Missa</h2> 
-                <div class="cards-missa">
-                                       
-                    <div>
+                <div class="cards-missa">  
+                    <img src="img/eucaristia.png" alt="eucaristia">             
+                    <div class="card">
                         <h2>Segunda a Sexta</h2>
                         <p>18:00 as 19:30</p>
-                    </div>
-                    <div>
                         <h2>Sabado</h2>
                         <p>08:00</p>
                         <p>11:00</p>
                         <p>19:30 as 21:00</p>
-                    </div>
-                    <div>
                         <h2>Domingo</h2>
                         <p>As 5H da manha</p>
                         <p>As 8H da missa infatil</p>
                         <p>As 10H da Manha</p>
                         <p>As 17H da tarde</p>
+
+                        <h5>* As missas de Sabado e Domingo são transmiditas no Instagram e no nosso Canal no Youtube</h5>
                     </div>
-                    
                 </div>
                 <h2>Confissões</h2>
                 <div>
@@ -131,9 +151,27 @@
                 <h2>Terço dos Homens</h2>
                 <div>
                     <h3>Quinta</h3>
-                    <p>Apos a missa, proximo ao santissimo</p>
+                    <p>Apos a missa de 19H, proximo ao santissimo</p>
+                </div>
+            </section>
+            <section id="contact">
+                <h1>Contato</h1>
+                <div class="youtube">
+                    <h1>Nosso Canal no Youtube</h1>
+                    <p>Siga nosso Canal no Youtube e acompanhe nossas missas onlines por lá</p>
+                </div>
+                <div class="midias">
+                    <h1>Nossas redes Sociais, nos acompanhe por lá</h1>
+                    <a>Instagram</a>
+                    <a>Whatsapp</a>
+                    <a>Facebook</a>
+                </div>
+                <div class="endereco">
+                    <h2>Nossa igreja está localizada:</h2>
+                    <p>Rua Mal. Costa e Silva, 148 - Primavera, Arapiraca - AL, 57304-000</p>
                 </div>
             </section>
         </main>
+        <footer><p>&copy Sagrado Coração de Jesus</p></footer>
     </body>
 </html>

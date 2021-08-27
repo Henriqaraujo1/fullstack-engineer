@@ -5,6 +5,7 @@ body, header{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
     font-family: 'Port Lligat Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -15,7 +16,6 @@ body, header{
 section {
     height: 100vh;
     margin: 15px auto;
-    border: 1px solid white;
 }
 
 .icon {
@@ -57,9 +57,10 @@ section {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.card-name{
+.title-name{
     display: flex;
     flex-direction: column;
     font-size: 25px;
@@ -68,26 +69,43 @@ section {
     margin: 1.5em;
 }
 
-.card-name h2{
+.title-name h2{
     display: flex;
     justify-content: center;
     margin-bottom: 0;
 }
 
-.card-name p {
+.title-name p {
     margin: 0;
     display: flex;
     justify-content: center
 }
 
-.card-text{
+.about{
 
     width: 500px;
     max-height: 250px;
     font-size: 30px;
 }
 
-.card-skills {
-    margin: 100px;
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: midnightblue;
+}
+
+.skills img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0.75em;
+    border-radius: 20px;
+}
+
+.skills h3 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
