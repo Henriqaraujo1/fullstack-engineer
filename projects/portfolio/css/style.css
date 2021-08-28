@@ -82,30 +82,46 @@ section {
 }
 
 .about{
-
     width: 500px;
     max-height: 250px;
     font-size: 30px;
 }
 
+.container-skills{
+    position: relative;
+    top: 90px;
+}
+
+.container-skills h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .skills {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    max-width: 60%;
+    height: max-content;
     justify-content: space-around;
     border-radius: 20px;
     background-color: midnightblue;
 }
 
 .skills img {
-    max-width: 100px;
-    max-height: 100px;
+    display: flex;
+    max-width: 70px;
+    max-height: 70px;
     margin: 0.75em;
     border-radius: 20px;
 }
 
 .skills h3 {
     display: flex;
-    justify-content: center;
+    white-space: pre-line;
+    justify-content: space-around;
     margin: 0;
 }
 
