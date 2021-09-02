@@ -1,10 +1,11 @@
 /* Import the fonts */
 @import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap');
 
-*{
+body, header{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
     font-family: 'Port Lligat Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -15,10 +16,112 @@
 section {
     height: 100vh;
     margin: 15px auto;
-    border: 1px solid white;
 }
 
-#icon {
-    
+.icon {
+    margin: 10px;    
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 1.5em;
+    line-height: 48px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white
+}
+
+.back{
+    background-image: url('/projects/portfolio/img/back.jpg');
+    background-size: cover;
+    border-radius: 15px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    position: absolute;
+    top: 30%;
+}
+
+
+.card-first{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.title-name{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    width: 300px;
+    max-height: 150px;
+    margin: 1.5em;
+}
+
+.title-name h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.title-name p {
+    margin: 0;
+    display: flex;
+    justify-content: center
+}
+
+.about{
+    width: 500px;
+    max-height: 250px;
+    font-size: 30px;
+}
+
+.container-skills{
+    position: relative;
+    top: 90px;
+}
+
+.container-skills h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 60%;
+    height: max-content;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: midnightblue;
+}
+
+.skills img {
+    display: flex;
+    max-width: 70px;
+    max-height: 70px;
+    margin: 0.75em;
+    border-radius: 20px;
+}
+
+.skills h3 {
+    display: flex;
+    white-space: pre-line;
+    justify-content: space-around;
+    margin: 0;
 }
 
