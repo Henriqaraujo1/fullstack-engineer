@@ -87,9 +87,12 @@ section {
     font-size: 30px;
 }
 
-.container-skills{
+.container-skills {
     position: relative;
-    top: 90px;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
 }
 
 .container-skills h2{
@@ -124,4 +127,69 @@ section {
     justify-content: space-around;
     margin: 0;
 }
+
+@media only screen and (max-width: 1000px) {
+    section{
+        height: max-content;
+    }
+}
+
+
+/* End style page home */
+
+/* Start style page project */
+
+#project {
+    display: flex;
+    flex-direction: column;
+}
+
+#project h1 {
+    position: relative;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+
+.container-projects {
+    display: grid;
+    grid-template: repeat(6  1fr)/ repeat(6 1fr);
+    margin: auto;
+    width: 800px;
+    height: 600px;
+    background-color: white;
+}
+
+.project-1 {
+    grid-area: 1 / 1 / auto / 4;
+    background-color: green;
+
+}
+
+/* .project-2 {
+    grid-area: 5 /1 /2/ 4;
+    background-color: greenyellow;
+    width: 50%;
+    height: 200px;
+}  */
+
+/* .project-3 {
+    background-color: hotpink;
+    width: 282px;
+    height: 390px;
+} */
+
+/* .project-4 {
+    background-color: indianred;
+    width: 528px;
+    height: 398px;
+} */
+
+/* .project-5 {
+    background-color: gold;
+    width: 249px;
+    height: 399px;
+} */
 
