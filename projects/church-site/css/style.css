@@ -1,10 +1,13 @@
 /* Import fonts */
 @import url("https://use.typekit.net/rzn0icj.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight:;
 }
 
 section {
@@ -75,30 +78,44 @@ i {
 .history p {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-
-
 
 .events {
     display: flex;
     flex-direction: column;
 }
 
+#back-missa {
+    background-image: url("/projects/church-site/img/missa.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
 
-.cards-missa {
-    height: max-content;
+.title-missa {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    font-family: great-vibes,sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 30px;
+    color: white;
 }
 
-.cards-missa .card{
-    padding: 0;
-    width: 500px;
-    display: flex;
+#bg-confi {
+    background-image: url('/projects/church-site/img/confessionario.png');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 50%;
 }
 
-.cards-missa img {
-    height: 300px;
+#terco {
+    background-image: url('/projects/church-site/img/terco.png');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
 }
+
