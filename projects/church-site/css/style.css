@@ -2,16 +2,19 @@
 @import url("https://use.typekit.net/rzn0icj.css");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-* {
+body,html {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    font-weight:;
 }
 
 section {
-    height: max-content;
+    width: 100%;
+    display: flex;
+    margin-top: 3em;
+    flex-direction: column;
 }
 
 .logo {
@@ -119,3 +122,18 @@ i {
     width: 50%;
 }
 
+
+.title-c {
+    display: flex;
+    justify-content: start;
+    font-family: great-vibes,sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 40px;
+    color: white;
+}
+
+#contact, footer {
+    background-color:rgba(255, 255 ,158, 0.93);
+
+}
