@@ -5,30 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sagrado Coração de Jesus</title>
         <link rel="shortcut icon" href="img/church.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">    
     </head>
     <body>
         <header>
+            <div class="hambuguer-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
             <nav class="menu">
                 <img class="logo" src="./img/pascom.png">
-                <a><i class="bi bi-house-door"></i>Home</a>
-                <a><i class="bi bi-info-circle"></i>Institucional</a>
+                <a href="#history"><i class="bi bi-house-door"></i>Home</a>
+                <a href="#information"><i class="bi bi-info-circle"></i>Institucional</a>
                 <a href="#events"><i class="bi bi-calendar-date"></i>Eventos</a>
-                <a><i class="bi bi-people"></i>Contato</a>
-                <a><i class="bi bi-box-arrow-in-right"></i>Login</a>
+                <a href="#contact"><i class="bi bi-people"></i>Contato</a>
+                <!-- <a><i class="bi bi-box-arrow-in-right"></i>Login</a> -->
             </nav>
             <div class="back">
                 <h1 class="title">Paroquia Sagrado Coração de Jesus</h1>
             </div>
         </header>
         <main>
-            <section class="history">
+            <section id="history">
                 <h1>Nossa Historia</h1>
                 <p>A Capela do Sagrado Coração de Jesus foi inaugurada no dia 1º de Janeiro de 1970, 
                     pelo Cônego Epitácio Rodrigues, e por muito tempo sediou missdominicais em Arapiraca.</p>
-                <div class="container m-auto">
+                <div class="container d-flex justify-content-around">
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <div class="col">
                             <div class="card rounded" style="width: 11rem;">
@@ -50,8 +55,8 @@
                 </div>
                 
             </section>
-            <section class="information">
-                <h1>Institucional</h1>
+            <section id="information">
+                <h1 class="text-center">Institucional</h1>
                 <p>Com anos de tradição, A paroquia Sagrado Coração de Jesus, hoje com nosso padre Jose Neto temos diverspastorais que 
                     auxiliam nossa comunidade, desde criançcom a pastoral da infancia, a crisma dos adultos, outrpastorais que temos é:
                 </p>
@@ -130,7 +135,7 @@
                 </section>
             </section>
             <section id="events">
-                <h1>Eventos</h1>
+                <h1 class="text-center">Eventos</h1>
                 <div id="back-missa">
                     <h2 class="title-missa display-3">Horario de Missa e Celebração</h2> 
                     <div class="d-flex flex-row justify-content-end text-white flex-wrap"  >
@@ -184,21 +189,26 @@
             </section>
             <section class="m-0" id="contact">
                 <h1 class=" d-flex justify-content-center">Contato</h1>
-                <div class="d-flex flex-row">
-                    <div class="card bg-transparent border-0">
+                <div class="card-group">
+                    <div class="card bg-transparent border-0 d-flex justify-content-around m-2" style="width: 19rem;">
+                        <a class='w-75 m-auto' href="https://www.youtube.com/c/Par%C3%B3quiaSagradoCora%C3%A7%C3%A3odeJesusArapiraca" target="_blank"><img class="card-img-top" src="img/youtube.png" alt="youtube channel"></a>
                         <div class="card-body">
-                            <h4 class="title-c text-black">Nosso Canal no Youtube</h4>
-                            <a href="https://www.youtube.com/c/Par%C3%B3quiaSagradoCora%C3%A7%C3%A3odeJesusArapiraca/featured" target="_blank"><img src="img/youtube.png"></a>
-                            <p>Siga nosso Canal no Youtube e acompanhe nossmissonlines por lá</p>
+                            <h4 class="title-c text-black m-auto">Nosso Canal no Youtube</h4>
+                            <p class="m-1">Siga nosso Canal no Youtube e acompanhe nossas missas onlines por lá</p>
                         </div>
                     </div>
-                    <div class="midias">
-                        <h1 class="title-c text-black">Nossa redes Sociais, nos acompanhe por lá</h1>
-                        <a>Instagram</a>
-                        <a>Whatsapp</a>
-                        <a>Facebook</a>
-                    </div>
+                        <div class="card bg-transparent border-0 m-2" style="width: 19rem;">
+                            <div class="card-img-top m-5 d-flex justify-content-center align-items-center">
+                                <a class="" href="https://www.facebook.com/pscjoficial1" target="_blank"><img class="img-fluid m-1 w-50" src="img/facebook.png" alt="facebook"></a>
+                                <a href="https://www.instagram.com/pscjoficial/" target="_blank"><img class="img-fluid m-1 w-50" src="img/instagram.png" alt="instagram"></a>
+                                <a href=""><img class="img-fluid m-1 w-50" src="img/whatsapp.png" alt="whatsapp"></a>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="title-c text-black">Nossa redes Sociais, nos acompanhe por lá</h1>
+                            </div>                            
+                        </div>
                     <div class="endereco">
+                        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62912.82952627523!2d-36.696254020898465!3d-9.7616761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x705d5a574978297%3A0x9f0c7c47c8c3aba6!2sPar%C3%B3quia%20Sagrado%20Cora%C3%A7%C3%A3o%20de%20Jesus!5e0!3m2!1sen!2sbr!4v1630939559360!5m2!1sen!2sbr" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         <h2 class="title-c text-black">Nossa igreja está localizada:</h2>
                         <p>Rua Mal. Costa e Silva, 148 - Primavera, Arapiraca - AL, 57304-000</p>
                     </div>

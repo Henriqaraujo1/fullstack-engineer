@@ -11,7 +11,6 @@ body,html {
 }
 
 section {
-    width: 100%;
     display: flex;
     margin-top: 3em;
     flex-direction: column;
@@ -58,19 +57,24 @@ section {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(255, 255 ,158, 0.93);
+    text-decoration: none;
+}
+
+.menu a {
+    text-decoration: none;
 }
 
 i {
     padding: 10px;
 }
 
-.history {
+#history {
     display: flex;
     flex-direction: column;
     margin: 2.5em;
 }
 
-.history h1 {
+#history h1 {
     display: flex;
     font-family: great-vibes, sans-serif;
     font-size: 40px; 
@@ -78,10 +82,15 @@ i {
     margin: 25px;
 }
 
-.history p {
+#history p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#information {
+    display: flex;
+    justify-content: center;
 }
 
 .events {
@@ -135,5 +144,5 @@ i {
 
 #contact, footer {
     background-color:rgba(255, 255 ,158, 0.93);
-
 }
+
