@@ -10,6 +10,9 @@ $Great-vibes: 'Great Vibes', cursive;
 $Lato: 'Lato', sans-serif;
 $Copse: 'Copse', serif;
 
+//Color Variables
+$menu-back: rgba(255, 255 ,158, 0.93);
+
 body {
 	width: 100%;
 	height: 100%;
@@ -138,8 +141,11 @@ i {
 	background-color: rgba(255, 255 ,158, 0.93);
 }
 footer {
+	margin: 0;
+	padding: 0;
 	background-color: rgba(255, 255 ,158, 0.93);
 }
+
 
 @include media(">phone","<=465px"){
 	body {
@@ -149,21 +155,119 @@ footer {
 		padding: 0;
 	}
 
+	html {
+		width: 100%;
+	}
+
+	section {
+		height: max-content;
+	}
+
 	.logo {
 		width: 50px;
 		position: relative;
 		left: 10px;
 	}
 
-	.menu{
-		font-size: 10px;
+	header {
+		.menu {
+			display: flex;
+			justify-content: center;
+		}
 	}
 
-	html {
+	.menu{
+		background-color: $menu-back;
+		opacity: 1;
+		height: 100px;
 		width: 100%;
+		font-size: 20px;		
+		display: flex;
+		align-items: center;
+		position: fixed;
+		overflow: hidden;
+		top: 0;
+		z-index: 1;
+		a {
+			display: flex;
+			justify-content: center;
+			color: black;
+		}
+	}
+
+	.logo {
+		display: none;
+	}
+	
+	.title {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	#history {
+		font-size: 25px;
+		display: flex;
+		justify-content: center;
+		margin: 10px;
+		.col{
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	#information{
+		font-size: 25px;
+		display: flex;
+		justify-content: center;
+		margin: 10px;
+		p{
+			text-align: center;
+		}
+		.col {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	#events {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#back-missa{
+		height: max-content;
+		h2{
+			text-align: center;
+		}	
+	}
+
+	#bg-confi {
+		background-position: center;
+		background-size: cover;
+		width: 100%;
+	}
+
+	#terco {
+		background-position:right;
+		background-size: cover;
+		width: 100%;
+		height: 300px;
 	}
 
 	.maps {
 		display: none;
 	}
+
+	
+	.endereco {
+		display:flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 10px;
+
+		h2{
+			text-align: center;
+		}
+	}
+
 }
