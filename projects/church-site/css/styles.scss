@@ -141,12 +141,11 @@ i {
 	background-color: rgba(255, 255 ,158, 0.93);
 }
 footer {
+	margin: 0;
+	padding: 0;
 	background-color: rgba(255, 255 ,158, 0.93);
 }
 
-.link {
-	display: none;
-}
 
 @include media(">phone","<=465px"){
 	body {
@@ -170,13 +169,30 @@ footer {
 		left: 10px;
 	}
 
+	header {
+		.menu {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
 	.menu{
 		background-color: $menu-back;
+		opacity: 1;
 		height: 100px;
-		font-size: 20px;
+		width: 100%;
+		font-size: 20px;		
 		display: flex;
-		justify-content: space-around;
 		align-items: center;
+		position: fixed;
+		overflow: hidden;
+		top: 0;
+		z-index: 1;
+		a {
+			display: flex;
+			justify-content: center;
+			color: black;
+		}
 	}
 
 	.logo {
@@ -184,9 +200,8 @@ footer {
 	}
 	
 	.title {
-		display: flex;
 		font-size: 2.5rem;
-		justify-content: space-around;
+		text-align: center;
 	}
 
 	#history {
@@ -194,6 +209,10 @@ footer {
 		display: flex;
 		justify-content: center;
 		margin: 10px;
+		.col{
+			display: flex;
+			justify-content: center;
+		}
 	}
 
 	#information{
