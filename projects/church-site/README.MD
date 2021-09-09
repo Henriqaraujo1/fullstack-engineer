@@ -1,5 +1,6 @@
 # :church: Website Church
 
-## A page about the church Sagrado Coração de Jesus in Alagoas-Brazil
-https://img.shields.io/badge/-css-orange
+### Completed
 
+## A page about the church Sagrado Coração de Jesus in Alagoas-Brazil
+[![Build Status](https://img.shields.io/badge/-css-orange)]
