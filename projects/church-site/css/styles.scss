@@ -159,10 +159,6 @@ footer {
 		width: 100%;
 	}
 
-	section {
-		height: max-content;
-	}
-
 	.logo {
 		width: 50px;
 		position: relative;
@@ -174,6 +170,10 @@ footer {
 			display: flex;
 			justify-content: center;
 		}
+	}
+
+	.back{
+		background-size: cover;
 	}
 
 	.menu{

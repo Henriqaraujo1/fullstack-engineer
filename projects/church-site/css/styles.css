@@ -217,11 +217,6 @@ footer {
   html {
     width: 100%;
   }
-  section {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
   .logo {
     width: 50px;
     position: relative;
@@ -234,6 +229,9 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .back {
+    background-size: cover;
   }
   .menu {
     background-color: rgba(255, 255, 158, 0.93);
