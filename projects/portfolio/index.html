@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henrique Silva Portfolio</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="./css/all.css" rel="stylesheet">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
   </head>
 
-  <body>
+  <body class="bg-transparent text-white">
     <header>
       <nav class="menu">
         <a href="#home"><i class="fas fa-home icon"></i>Home</a>
@@ -23,8 +24,8 @@
       </div>
     </header>
     <main>
-      <section id="home">
-        <div class="card-first">
+      <section class="d-flex flex-wrap" id="home">
+        <div class="d-flex justify-content-around flex-row flex-wrap">
           <div class="title-name">
             <h2>Hello,</h2>
             <p>I'm Henrique Silva</p>
@@ -34,42 +35,62 @@
               I'm enthusiastic about the development of solutions or features to a problem in our day and create sites like create in figma</p> 
           </div>
         </div>
-          <div class="container-skills">
+        <div class="perfil m-auto">
+          <img class="img-fluid rounded-circle d-flex justify-content-center" src="./img/js.png" alt="perfil">
+        </div>
+
+        <div class="container-skills">
             <h2>My Skills</h2>
             <div class="skills">
-              <picture>
-                <img src="./img/js.png" alt="js">
-                <h3>Javascript</h3>
-              </picture>
-              <picture>
-                <img src="./img/html.png" alt="html">
-                <h3>HTML</h3>
-              </picture>
-              <picture>
-                <img src="./img/css.png" alt="css">
-                <h3>CSS</h3>
-              </picture> 
-              <picture>
-                <img src="./img/git.png" alt="git">
-                <h3>GitHub</h3>
-              </picture> 
-              <picture>
-                <img src="./img/react.png" alt="react">
-                <h3>React</h3>
-              </picture> 
-              <picture>
-                <img src="./img/nodejs.png" alt="nodejs">
-                <h3>Node Js</h3>
-              </picture> 
-              <picture>
-                <img src="./img/bootstrap.png" alt="bootstrap">
-                <h3>Bootstrap</h3>
-              </picture> 
-              <picture>
-                <img src="./img/responsive.png" alt="responsive">
-                <h3>Responsive 
-                  Design</h3>
-              </picture> 
+              <div class="card-group">
+                <div class="card bg-transparent border-0 m-3">
+                  <img class="card-img-top rounded-1 m-auto" src="./img/js.png" alt="js">
+                  <div class="card-body p-0">
+                    <h3 class='card-title m-2'>Javascript</h3>
+                  </div>
+                </div>
+                <div class="card bg-transparent border-0 m-3">
+                    <img class="card-img-top img-fluid rounded-1 m-auto" src="./img/html.png" alt="html">
+                    <div class="card-body p-0">
+                      <h3 class="card-title m-2">HTML</h3>
+                    </div>
+                </div>
+                <div class="card bg-transparent border-0 m-3">
+                  <img class="card-img-top img-fluid rounded-1 m-auto" src="./img/css.png" alt="css">
+                  <div class="card-body p-0">
+                    <h3 class="card-title m-2">CSS</h3>
+                  </div>
+                </div>
+                <div class="card bg-transparent border-0 m-3">
+                  <img class="card-img-top img-fluid rounded-1 m-auto" src="./img/git.png" alt="git">
+                  <div class="card-body p-0">
+                    <h3 class="card-title m-2">Git</h3>
+                  </div>
+                </div>
+                <div class="card bg-transparent border-0 m-3">
+                  <img class="card-img-top img-fluid rounded-1 m-auto" src="./img/nodejs.png" alt="nodejs">
+                  <div class="card-body p-0">
+                    <h3 class="card-title m-2">NodeJs</h3>
+                  </div>
+                </div>
+                <div class="card bg-transparent border-0 m-3">
+                  <img class="card-img-top img-fluid rounded-1 m-auto" src="./img/react.png" alt="react">
+                  <div class="card-body p-0">
+                    <h3 class="card-title m-2">React Js</h3>
+                  </div>
+                </div>
+                <div class="card bg-transparent border-0 m-3">
+                  <img class="card-img-top img-fluid rounded-1 m-auto" src="./img/bootstrap.png" alt="bootstrap">
+                  <div class="card-body p-0">
+                    <h3 class="card-title m-2">Bootstrap</h3>
+                  </div>
+                </div>
+                <div class="card bg-transparent border-0 m-3">
+                  <img class="card-img-top img-fluid rounded-1 m-auto" src="./img/responsive.png" alt="responsive">
+                  <div class="card-body p-0">
+                    <h3 class="card-title m-2">Responsive Design</h3>
+                  </div>
+                </div>
             </div>
           </div>
       </section>
@@ -107,15 +128,17 @@
       </section>
       <section id="about-me">
         <h1>About-me</h1>
-        <div>
-          <img src="./img/henrique-silva.png" class="img-fluid">
+        <div class="d-flex">
+          <div class="w-100 h-100">
+            <img class="img-fluid" src="./img/henrique-silva.png">
+          </div>
+          <p>Hi, I'm Henrique from Brazil I have 24 years old and graduated in 2021 as Software Engineer in 
+            Brazil and a full-stack Engineer in Codecademy. Work with Client Support for many years and know 
+            I am Freelancer with a full-stack engineer, and work with (HTML, CSS, JavaScripts, ANGULAR, React) 
+            and other technologies.</p>
         </div>
-        <p>Hi, I'm Henrique from Brazil I have 24 years old and graduated in 2021 as Software Engineer in 
-          Brazil and a full-stack Engineer in Codecademy. Work with Client Support for many years and know 
-          I am Freelancer with a full-stack engineer, and work with (HTML, CSS, JavaScripts, ANGULAR, React) 
-          and other technologies.</p>
+        
         <p>The college where I finished the bachelor's degree is Unicesumar
-
           And i study of full-stack engineer in the Codecademy</p>  
       </section>
       <section  id="contact">
