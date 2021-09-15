@@ -95,7 +95,7 @@
           </div>
       </section>
       <section id="project">
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         <div class="container-projects">
           <a href="" target="_blank" class="project-1">
             <div>
@@ -127,22 +127,39 @@
         </div>
       </section>
       <section id="about-me">
-        <h1>About-me</h1>
+        <h2>About-me</h2>
         <div class="d-flex">
-          <div class="w-100 h-100">
-            <img class="img-fluid" src="./img/henrique-silva.png">
+          <div class="eu">
+            <img class="img-fluid text-white-50" src="./img/henrique-silva.png">
           </div>
           <p>Hi, I'm Henrique from Brazil I have 24 years old and graduated in 2021 as Software Engineer in 
             Brazil and a full-stack Engineer in Codecademy. Work with Client Support for many years and know 
             I am Freelancer with a full-stack engineer, and work with (HTML, CSS, JavaScripts, ANGULAR, React) 
             and other technologies.</p>
         </div>
-        
-        <p>The college where I finished the bachelor's degree is Unicesumar
+        <div class="college d-flex justify-content-around">
+          <img class="img-fluid m-1 w-25"src="./img/unicesumar.png" alt="unicesumar">
+          <img class="img-fluid m-1 w-25"src="./img/codecademy.png" alt="codecademy">
+          <p>I just finished my Bachaleros degree in Software Engineer in Unicesumar
           And i study of full-stack engineer in the Codecademy</p>  
+        </div>
+        
       </section>
       <section  id="contact">
-        <h1>Contact</h1>
+        <h2>Contact</h2>
+        <form class="1d-flex justify-content-end flex-column w-25 align-content-end">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname">
+          <label for="sname">Last Name</label>
+          <input type="text" id='Sname' name="sname">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        </form>
+        <p>Let's work together on your future projects</p>
       </section>
     </main>
     <footer></footer>
