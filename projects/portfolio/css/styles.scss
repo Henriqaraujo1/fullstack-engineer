@@ -221,15 +221,37 @@ section {
 		display: flex;
 		justify-content: center;
 	}
+	form {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 60%;
+		width: 35%;
 
-	// form {
-	// 	display: flex;
-	// 	justify-content: flex-end;
-	// 	flex-direction: column;
-	// 	width: 30%;
-	// }
-
+	}
+	input{
+		padding: 10px;
+		border-radius: 25px;
+		border: transparent;
+		background-color: gray;
+	}
+	textarea {
+		background-color: gray;
+		border-radius: 25px;
+		border: transparent;
+		resize: none;
+	}
+	label{
+		position: relative;
+		top: 10px;
+		left: 25px;
+		background-color: black;
+		width: max-content;
+		border-radius: 5px;
+	}
 }
+	
+
 
 
 

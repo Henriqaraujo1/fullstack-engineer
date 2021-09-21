@@ -345,6 +345,44 @@ section {
           justify-content: center;
 }
 
+#contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  left: 60%;
+  width: 35%;
+}
+
+#contact input {
+  padding: 10px;
+  border-radius: 25px;
+  border: transparent;
+  background-color: gray;
+}
+
+#contact textarea {
+  background-color: gray;
+  border-radius: 25px;
+  border: transparent;
+  resize: none;
+}
+
+#contact label {
+  position: relative;
+  top: 10px;
+  left: 25px;
+  background-color: black;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 476px) {
   body {
     width: 100%;
