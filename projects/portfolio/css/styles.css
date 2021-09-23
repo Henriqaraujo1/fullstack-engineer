@@ -5,6 +5,8 @@
 * Testing
 *
 **/
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
 /* Start style page project */
 body {
   width: 100%;
@@ -302,6 +304,9 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 #about-me h2 {
@@ -317,13 +322,13 @@ section {
 #about-me .eu {
   background-color: transparent;
   background-size: cover;
-  width: 80%;
-  margin-left: 100px;
+  position: relative;
+  left: 80px;
 }
 
 #about-me p {
+  position: relative;
   font-size: 20px;
-  padding: 75px;
 }
 
 #contact {
@@ -334,6 +339,10 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  top: 2rem;
 }
 
 #contact h2 {
@@ -343,6 +352,18 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 50px;
+}
+
+#contact .form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #contact form {
@@ -354,8 +375,6 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  left: 60%;
-  width: 35%;
 }
 
 #contact input {
@@ -381,6 +400,60 @@ section {
   width: -moz-max-content;
   width: max-content;
   border-radius: 5px;
+}
+
+.final-p {
+  font-family: "Kaushan Script", "Arial", cursive;
+  font-size: 35px;
+  position: relative;
+  top: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.social {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social .fig {
+  width: 200px;
+}
+
+.social .fig a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social .fig .linkedin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 200px;
+}
+
+.social .fig .github {
+  width: 70%;
 }
 
 @media only screen and (max-width: 476px) {

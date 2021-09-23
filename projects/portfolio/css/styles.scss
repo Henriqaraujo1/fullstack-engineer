@@ -1,9 +1,11 @@
 /* Import the fonts */
 @import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap');
 @import './breakpoints/breakpoints.scss';
+@import './variables.scss';
 
 //Import fonts
 $Port-Lligat: 'Port Lligat Sans', sans-serif;
+
 
 //Color variables
 $Black:  #000;
@@ -196,6 +198,7 @@ section {
 #about-me{
 	display: flex;
 	flex-direction: column;
+	height: max-content;
 	h2 {
 		display: flex;
 		justify-content: center;
@@ -204,12 +207,12 @@ section {
 	.eu {
 		background-color: transparent;
 		background-size: cover; 
-		width: 80%;
-		margin-left: 100px;
+		position: relative;
+		left: 80px;
 	}
 	p{
+		position: relative;
 		font-size: 20px;
-		padding: 75px;
 	}
 
 }
@@ -217,16 +220,24 @@ section {
 #contact {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	position: relative;
+	top: 2rem;
 	h2 {
 		display: flex;
 		justify-content: center;
+		margin-bottom: 50px;
+	}
+	.form{
+		position: relative;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
 	}
 	form {
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		left: 60%;
-		width: 35%;
 
 	}
 	input{
@@ -250,6 +261,39 @@ section {
 		border-radius: 5px;
 	}
 }
+
+.final-p {
+	font-family: $Birthstone;
+	font-size: 35px;
+	position: relative;
+	top: 10px;
+	width: max-content;
+}
+	.social{
+		position: relative;
+		top: 50px;
+		left: 100px;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		.fig{
+			a{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			width: 200px;
+			.linkedin{
+				display: flex;
+				align-content: center;
+				width: 200px;
+			}
+			.github{
+				width: 70%;
+			}
+		}
+		
+	}
 	
 
 
