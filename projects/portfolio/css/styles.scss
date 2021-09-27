@@ -1,9 +1,12 @@
 /* Import the fonts */
 @import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap');
 @import './breakpoints/breakpoints.scss';
+@import './variables.scss';
+@import './breakpoints/buttons.scss';
 
 //Import fonts
 $Port-Lligat: 'Port Lligat Sans', sans-serif;
+
 
 //Color variables
 $Black:  #000;
@@ -156,42 +159,37 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	margin: auto;
 	width: 100%;
-	height: 600px;
-}
-.project-1 {
-	width: 50%;
-	height: 40%;
-	background-color: gray;
-}
-.project-2 {
-	background-color: greenyellow;
-	width: 50%;
-	height: 40%;
-}
-.project-3 {
-	display: flex;
-	background-color: hotpink;
-	width: 25%;
-	height: 60%;
-}
-.project-4 {
-	flex-grow: 1;
-	background-color: indianred;
-	width: 50%;
-	height: 60%;
-}
-.project-5 {
-	background-color: gold;
-	width: 25%;
-	height: 60%;
+	height: 700px;
+	.project-1 {
+		width: 50%;
+		height: 60%;
+		background-color: gray;
+	}
+	.project-2 {
+		background-color: greenyellow;
+		width: 50%;
+		height: 60%;
+	}
+	.project-3 {
+		display: flex;
+		background-color: hotpink;
+		width: 25%;
+		height: 60%;
+	}
+	.project-4 {
+		flex-grow: 1;
+		background-color: indianred;
+		width: 50%;
+		height: 60%;
+	}
+	.project-5 {
+		background-color: gold;
+		width: 25%;
+		height: 60%;
+	}
 }
 
-.container{
-	width: 400px;
-	height: 300px;
-}
 
 #about-me{
 	display: flex;
@@ -199,44 +197,65 @@ section {
 	h2 {
 		display: flex;
 		justify-content: center;
-		font-size: 25px;
+		font-size: 45px;
+		margin-bottom: 50px;
 	}
-	.eu {
-		background-color: transparent;
-		background-size: cover; 
-		width: 80%;
-		margin-left: 100px;
-	}
-	p{
-		font-size: 20px;
-		padding: 75px;
-	}
+	.about{
+		display: flex;
+
+		.me{
+			width: 900px;
+		}
+		.img-me{
+			width: 100%;
+			border: none;
+			border-radius: 150px;
+			background: rgb(0,0,0);
+			background: linear-gradient(45deg, rgba(0,0,0,1) 34%, rgba(70,83,252,1) 100%);
+		}
+		p{
+			font-size: 20px;
+		}
+	}	
 
 }
 
 #contact {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	position: relative;
+	top: 2rem;
 	h2 {
 		display: flex;
 		justify-content: center;
+		margin-bottom: 50px;
+	}
+	.f-contact{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
 	}
 	form {
 		display: flex;
 		flex-direction: column;
-		position: relative;
-		left: 60%;
-		width: 35%;
-
+		width: 600px;
 	}
 	input{
+		width: 100%;
+		height: 50px;
 		padding: 10px;
 		border-radius: 25px;
-		border: transparent;
-		background-color: gray;
+		border: none;
+		background-color:$Gray-input;
+		color: white;
+		outline: none;
+	}
+	input:focus{
+		border: 5px solid $Green-click;
 	}
 	textarea {
-		background-color: gray;
+		background-color: $Gray-input;
 		border-radius: 25px;
 		border: transparent;
 		resize: none;
@@ -246,10 +265,46 @@ section {
 		top: 10px;
 		left: 25px;
 		background-color: black;
+		color: white;
 		width: max-content;
 		border-radius: 5px;
+		font-size: 1.5rem;
 	}
 }
+
+.final-p {
+	font-family: $Birthstone;
+	font-size: 35px;
+	position: relative;
+	top: 10px;
+	width: max-content;
+	display: flex;
+	justify-content: center;
+}
+	.social{
+		position: relative;
+		top: 50px;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		.fig{
+			a{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			width: 200px;
+			.linkedin{
+				display: flex;
+				align-content: center;
+				width: 100%;
+			}
+			.github{
+				width: 70%;
+			}
+		}
+		
+	}
 	
 
 
