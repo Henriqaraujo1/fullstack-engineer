@@ -10,6 +10,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap");
 .icon {
   margin: 10px;
 }
@@ -82,7 +85,7 @@
 }
 
 .title-name p {
-  margin: 0;
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +94,7 @@
           justify-content: center;
 }
 
-.about {
+.describe {
   width: 500px;
   max-height: 250px;
   font-size: 20px;
@@ -264,7 +267,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 45px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 #about-me .about {
@@ -282,7 +285,7 @@
   border: none;
   border-radius: 150px;
   background: black;
-  background: linear-gradient(45deg, black 34%, #4653fc 100%);
+  background: linear-gradient(45deg, black 34%, midnightblue 100%);
 }
 
 #about-me .about p {
@@ -297,10 +300,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   position: relative;
-  top: 2rem;
+  top: 1rem;
 }
 
 #contact h2 {
@@ -310,7 +311,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 #contact .f-contact {
@@ -331,7 +332,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 600px;
+  width: 30%;
 }
 
 #contact input {
@@ -341,12 +342,12 @@
   border-radius: 25px;
   border: none;
   background-color: #B5B6B5;
-  color: white;
+  color: black;
   outline: none;
 }
 
 #contact input:focus {
-  border: 5px solid #4BB543;
+  border: 2px solid #4BB543;
 }
 
 #contact textarea {
@@ -354,6 +355,11 @@
   border-radius: 25px;
   border: transparent;
   resize: none;
+  outline: none;
+}
+
+#contact textarea:focus {
+  border: 2px solid #4BB543;
 }
 
 #contact label {
@@ -374,9 +380,6 @@
   font-size: 35px;
   position: relative;
   top: 10px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -846,18 +849,27 @@ section {
     height: 100%;
     margin: 0;
   }
+  main {
+    height: 100vmax;
+    width: 100%;
+  }
   section {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     margin-top: 3rem;
   }
+  .menu {
+    display: none;
+  }
+  .describe {
+    margin: 10px;
+  }
   .skills {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    margin: 0;
+    width: 90%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -873,6 +885,84 @@ section {
         justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  #about-me .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about-me .about .me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+  }
+  #about-me .about .img-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #about-me .about p {
+    margin-top: 10px;
+    text-align: justify;
+    margin: 10px;
+  }
+  #contact {
+    margin-bottom: 100px;
+  }
+  #contact .phrase {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  #contact .f-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #contact .final-p {
+    font-size: 20px;
+  }
+  #contact .fig {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 50%;
+  }
+  #contact .social {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  #contact form {
+    position: relative;
+    top: 10px;
+    width: 80%;
+  }
+  #contact label {
+    font-size: 20px;
+  }
+  #contact .button {
+    position: relative;
+    top: 10px;
+    height: 35px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

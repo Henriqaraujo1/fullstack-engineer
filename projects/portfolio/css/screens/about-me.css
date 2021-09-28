@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap");
 #about-me {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,7 +19,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 45px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 #about-me .about {
@@ -34,7 +37,7 @@
   border: none;
   border-radius: 150px;
   background: black;
-  background: linear-gradient(45deg, black 34%, #4653fc 100%);
+  background: linear-gradient(45deg, black 34%, midnightblue 100%);
 }
 
 #about-me .about p {
