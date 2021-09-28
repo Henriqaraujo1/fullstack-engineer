@@ -4,13 +4,13 @@
 #contact {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	position: relative;
-	top: 2rem;
+	top: 1rem;
+	bottom: 100px;
 	h2 {
 		display: flex;
 		justify-content: center;
-		margin-bottom: 50px;
+		margin-bottom: 25px;
 	}
 	.f-contact{
 		display: flex;
@@ -20,7 +20,7 @@
 	form {
 		display: flex;
 		flex-direction: column;
-		width: 600px;
+		width: 30%;
 	}
 	input{
 		width: 100%;
@@ -29,17 +29,21 @@
 		border-radius: 25px;
 		border: none;
 		background-color:$Gray-input;
-		color: white;
+		color: black;
 		outline: none;
 	}
 	input:focus{
-		border: 5px solid $Green-click;
+		border: 2px solid $Green-click;
 	}
 	textarea {
 		background-color: $Gray-input;
 		border-radius: 25px;
 		border: transparent;
 		resize: none;
+		outline: none;
+	}
+	textarea:focus{
+		border: 2px solid $Green-click;
 	}
 	label{
 		position: relative;
@@ -58,7 +62,6 @@
 	font-size: 35px;
 	position: relative;
 	top: 10px;
-	width: max-content;
 	display: flex;
 	justify-content: center;
 }

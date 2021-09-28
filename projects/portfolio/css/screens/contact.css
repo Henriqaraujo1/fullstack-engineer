@@ -9,10 +9,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   position: relative;
-  top: 2rem;
+  top: 1rem;
+  bottom: 100px;
 }
 
 #contact h2 {
@@ -22,7 +21,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 #contact .f-contact {
@@ -43,7 +42,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 600px;
+  width: 30%;
 }
 
 #contact input {
@@ -53,12 +52,12 @@
   border-radius: 25px;
   border: none;
   background-color: #B5B6B5;
-  color: white;
+  color: black;
   outline: none;
 }
 
 #contact input:focus {
-  border: 5px solid #4BB543;
+  border: 2px solid #4BB543;
 }
 
 #contact textarea {
@@ -66,6 +65,11 @@
   border-radius: 25px;
   border: transparent;
   resize: none;
+  outline: none;
+}
+
+#contact textarea:focus {
+  border: 2px solid #4BB543;
 }
 
 #contact label {
@@ -86,9 +90,6 @@
   font-size: 35px;
   position: relative;
   top: 10px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
