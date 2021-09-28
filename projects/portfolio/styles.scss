@@ -1,0 +1,82 @@
+
+// Import sections //
+@import './css/screens/headers.scss';
+@import './css/screens/home.scss';
+@import './css/screens/project.scss';
+@import './css/screens/about-me.scss';
+@import './css/screens/contact.scss';
+
+
+
+// Imports variables, buttons, responsives-screens
+@import './css/variables/variables.scss';
+@import './css/breakpoints/breakpoints.scss';	
+@import './css/buttons/buttons.scss';
+@import './css/screens/reset.scss';
+
+
+
+/* Start style page project */
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: $Port-Lligat;
+	font-style: normal;
+	font-weight: normal;
+	color: $White;
+	background-color: #000;
+}
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: $Port-Lligat;
+	font-style: normal;
+	font-weight: normal;
+	background-color: #000;
+}
+section {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 2em;
+}
+
+@include media(">phone","<=465px"){
+	body{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+
+	section{
+		height: max-content;
+		margin-top: 3rem;
+	}
+
+	.skills{
+		display: flex;
+		width: 100%;
+		margin: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+		div{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+	}
+}
+
+
+
+
+
+	
+
+
+

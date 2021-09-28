@@ -1,0 +1,27 @@
+.icon {
+	margin: 10px;
+}
+.menu {
+	display: flex;
+	height:60px;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 1.5em;
+	line-height: 48px;
+	a {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: white;
+	}
+}
+.back {
+	background-image: url('/projects/portfolio/img/back.jpg');
+	background-size: cover;
+	border-radius: 15px;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
