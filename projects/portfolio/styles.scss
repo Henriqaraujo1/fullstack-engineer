@@ -7,8 +7,6 @@
 @import './css/screens/contact.scss';
 
 
-
-
 // Imports variables, buttons, responsives-screens
 @import './css/variables/variables.scss';
 @import './css/breakpoints/breakpoints.scss';	
@@ -53,6 +51,7 @@ section {
 		width: 100%;
 		height: 100%;
 		margin: 0;
+		padding: 0;
 	}
 
 	html{
@@ -68,18 +67,31 @@ section {
 		margin-top: 3rem;
 	}
 
-	.menu{
-		display: none;
+	.nav-menu{
+		position: fixed;
+		top: 5rem;
+		flex-direction: column;
+		background-color: #000;
+		width: 100%;
+		border-radius: 10px;
+		text-align: center;
+		transition: 0.3s;
+		box-shadow: 0 10px 25px rgba(0,0,0, 0.05);
 	}
 
-	.hamburger{
-		display: block;
+	.nav-menu.active{
+		left: 0;
 	}
-	
+
+	.menu-name{
+		margin: 2.5rem 0;
+	}
+
+
 	.back{
 		background-position: top;
 		.back-desc{
-			text-align: center;
+			text-align: none;
 		}
 	}
 

@@ -24,29 +24,64 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 65px;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-size: 1.5em;
-  line-height: 48px;
+  text-decoration: none;
+  margin-left: 5rem;
 }
 
-.menu a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  color: white;
+.menu-link {
+  font-size: 18px;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-image: #fff;
 }
 
 .back {
+  display: none;
   background-image: url("/projects/portfolio/img/back.jpg");
   background-size: cover;
   border-radius: 15px;
@@ -895,6 +930,7 @@ section {
     width: 100%;
     height: 100%;
     margin: 0;
+    padding: 0;
   }
   html {
     height: 100%;
@@ -909,17 +945,33 @@ section {
     height: max-content;
     margin-top: 3rem;
   }
-  .menu {
-    display: none;
+  .nav-menu {
+    position: fixed;
+    top: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   }
-  .hamburger {
-    display: block;
+  .nav-menu.active {
+    left: 0;
+  }
+  .menu-name {
+    margin: 2.5rem 0;
   }
   .back {
     background-position: top;
   }
   .back .back-desc {
-    text-align: center;
+    text-align: none;
   }
   .describe {
     margin: 10px;

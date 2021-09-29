@@ -5,23 +5,50 @@
 }
 .menu {
 	display: flex;
-	height:60px;
-	flex-direction: row;
 	justify-content: space-around;
-	font-size: 1.5em;
-	line-height: 48px;
-	a {
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-		color: white;
-	}
+	align-content: center;
+	height: 65px;
+}
 
+.nav-menu{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-name{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	text-decoration: none;
+	margin-left: 5rem;
+}
+.menu-link{
+	font-size: 18px;
+	color: $White;
 }
 
 
+.hamburger{
+	display: none;
+}
+
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3 ease-in-out;
+	background-image: $White;
+}
+
 
 .back {
+	display: none;
 	background-image: url('/projects/portfolio/img/back.jpg');
 	background-size: cover;
 	border-radius: 15px;
