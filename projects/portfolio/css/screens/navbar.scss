@@ -1,0 +1,40 @@
+@import '../variables/variables.scss';
+@import '../breakpoints/breakpoints.scss';
+
+.hamburguer {
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: $Black;
+}
+
+@include media ('>phone', '<=465px') {
+    .menu{
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 
+                0 10px 27px rgba(0,0,0, 0.05);
+    }
+
+    .menu.active{
+        left: 0;
+    }
+
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+}

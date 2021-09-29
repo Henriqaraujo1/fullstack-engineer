@@ -13,6 +13,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap");
 .icon {
   margin: 10px;
 }
@@ -210,7 +213,7 @@
   height: -moz-max-content;
   height: max-content;
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 
 .container-projects .project-1 {
@@ -267,6 +270,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 45px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -288,8 +292,47 @@
   background: linear-gradient(45deg, black 34%, midnightblue 100%);
 }
 
-#about-me .about p {
-  font-size: 20px;
+#about-me .about .about-desc {
+  font-size: 16px;
+}
+
+#about-me .college {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  position: relative;
+  top: 25px;
+}
+
+#about-me .college .college-fig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about-me .college .unicesumar {
+  width: 60%;
+  border-radius: 100%;
+}
+
+#about-me .college .codecademy {
+  width: 60%;
+  border-radius: 100%;
+}
+
+#about-me .college-desc {
+  text-align: center;
+  margin-top: 15px;
 }
 
 #contact {
@@ -301,6 +344,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   top: 1rem;
 }
 
@@ -841,6 +887,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 @media (min-width: 361px) and (max-width: 465px) {
@@ -849,9 +896,12 @@ section {
     height: 100%;
     margin: 0;
   }
-  main {
-    height: 100vmax;
+  html {
+    height: 100%;
     width: 100%;
+  }
+  html p {
+    font-size: 16px;
   }
   section {
     height: -webkit-max-content;
@@ -861,6 +911,15 @@ section {
   }
   .menu {
     display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .back {
+    background-position: top;
+  }
+  .back .back-desc {
+    text-align: center;
   }
   .describe {
     margin: 10px;

@@ -8,6 +8,7 @@
 
 
 
+
 // Imports variables, buttons, responsives-screens
 @import './css/variables/variables.scss';
 @import './css/breakpoints/breakpoints.scss';	
@@ -44,6 +45,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 @include media(">phone","<=465px"){
@@ -53,9 +55,12 @@ section {
 		margin: 0;
 	}
 
-	main{
-		height: 100vmax;
+	html{
+		height: 100%;
 		width: 100%;
+		p{
+			font-size: 16px;
+		}
 	}
 
 	section{
@@ -65,6 +70,17 @@ section {
 
 	.menu{
 		display: none;
+	}
+
+	.hamburger{
+		display: block;
+	}
+	
+	.back{
+		background-position: top;
+		.back-desc{
+			text-align: center;
+		}
 	}
 
 	.describe{
@@ -135,7 +151,7 @@ section {
 		.button{
 			position: relative;
 			top: 10px;
-			height: 35px ;
+			height: 35px;
 		}
 
 	}
