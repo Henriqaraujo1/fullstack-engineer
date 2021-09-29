@@ -10,8 +10,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   top: 1rem;
-  bottom: 100px;
 }
 
 #contact h2 {

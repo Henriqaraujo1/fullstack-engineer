@@ -1,3 +1,5 @@
+@import '../variables/variables.scss';
+
 .icon {
 	margin: 10px;
 }
@@ -14,7 +16,11 @@
 		text-decoration: none;
 		color: white;
 	}
+
 }
+
+
+
 .back {
 	background-image: url('/projects/portfolio/img/back.jpg');
 	background-size: cover;

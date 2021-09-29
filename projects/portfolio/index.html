@@ -8,19 +8,24 @@
     <link href="./styles.css" rel="stylesheet">
     <link href="./css/all.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   </head>
 
   <body class="bg-transparent text-white">
     <header>
+      <button type="button" class="hamburger">
+        <span class="fas fa-bars">menu</span>
+        <span class="far fa-times-circle">closed</span>
+      </button>
       <nav class="menu">
-        <a href="#home"><i class="fas fa-home icon"></i>Home</a>
-        <a href="#project"><i class="fas fa-medal icon"></i>Projects</a>
-        <a href="#about-me"><i class="far fa-address-card icon"></i>About-me</a>
-        <a href="#contact"><i class="fas fa-id-card icon"></i>Contact</a>
+        <a class="menu-list" href="#home"><i class="fas fa-home icon"></i>Home</a>
+        <a class="menu-list" href="#project"><i class="fas fa-medal icon"></i>Projects</a>
+        <a class="menu-list" href="#about-me"><i class="far fa-address-card icon"></i>About-me</a>
+        <a class="menu-list" href="#contact"><i class="fas fa-id-card icon"></i>Contact</a>
+        
       </nav>
       <div class="back">
-        <h1>Programming and creative with Coffee</h1>
+        <h1 class="back-desc">Programming and creative with Coffee</h1>
       </div>
     </header>
     <main>
@@ -97,28 +102,28 @@
       <section id="project">
         <h2>Projects</h2>
         <div class="container-projects">
-          <a href="" target="_blank" class="project-1">
+          <a class="menu-list" href="" target="_blank" class="project-1">
             <div>
               
             </div>
           </a>
-          <a href="" target="_blank" class="project-2">
+          <a class="menu-list" href="" target="_blank" class="project-2">
             <div>
               
             </div>
           </a>
           
-          <a href="" target="_blank" class="project-3">
+          <a class="menu-list" href="" target="_blank" class="project-3">
             <div>
               
             </div>
           </a>
-          <a href="" target="_blank" class="project-4">
+          <a class="menu-list" href="" target="_blank" class="project-4">
             <div>
               
             </div>
           </a>
-          <a href="" target="_blank" class="project-5">
+          <a class="menu-list" href="" target="_blank" class="project-5">
             <div>
               
             </div>
@@ -132,17 +137,21 @@
           <div class="me m-auto">
             <img class="img-me" src="./img/henrique-silva.png">
           </div>
-          <p>Hi, I'm Henrique from Brazil I have 24 years old and graduated in 2021 as Software Engineer in 
-            Brazil and a full-stack Engineer in Codecademy. Work with Client Support for many years and know 
+          <p class="about-desc">Hi, I'm Henrique from Brazil I have 24 years old and graduated in 2021 as Software Engineer in 
+            and a full-stack Engineer in Codecademy. Work with Client Support for many years and know 
             I am Freelancer with a full-stack engineer, and work with (HTML, CSS, JavaScripts, ANGULAR, React) 
             and other technologies.</p>
         </div>
-        <!-- <div class="college d-flex justify-content-around m-2">
-          <img class="img-fluid m-1 w-25"src="./img/unicesumar.png" alt="unicesumar">
-          <img class="img-fluid m-1 w-25"src="./img/codecademy.png" alt="codecademy">
-          <p>I just finished my Bachaleros degree in Software Engineer in Unicesumar
+        <figure class="college">
+            <figure class="college-fig">
+              <img class="unicesumar" src="./img/unicesumar.png" alt="unicesumar">
+            </figure>
+            <figure class="college-fig">
+              <img class="codecademy" src="./img/codecademy.png" alt="codecademy">
+            </figure>
+          </figure>
+        <p class="college-desc">I just finished my Bachaleros degree in Software Engineer in Unicesumar
           And i study of full-stack engineer in the Codecademy</p>  
-        </div> -->
         
       </section>
       <section  id="contact">
@@ -152,11 +161,11 @@
             <p class="final-p m-auto">Let's work together on your future projects</p>
             <figure class="social">
               <figure class="fig">
-                <a href="https://www.linkedin.com/in/henrique-silva96/" target="_blank">
+                <a class="menu-list" href="https://www.linkedin.com/in/henrique-silva96/" target="_blank">
                   <img class="linkedin" src="./img/linkedin.png" alt="linkedin"/></a>
               </figure>
               <figure class="fig">
-                <a href="https://github.com/Henriqaraujo1" target="_blank">
+                <a class="menu-list" href="https://github.com/Henriqaraujo1" target="_blank">
                   <img class="github" src="./img/git-branco.png" alt="github"/></a>
                 
               </figure>
@@ -187,7 +196,12 @@
         
       </section>
     </main>
-    <footer></footer>
-    <script src="js/script.js"></script>
+    <footer>
+      <!-- <button class="bottom-top">
+        <div>
+          <i class="bi bi-arrow-up-circle"></i>
+        </div>
+      </button> -->
+    </footer>
   </body>
 </html>
