@@ -56,11 +56,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  text-decoration: none;
   margin-left: 5rem;
 }
 
 .menu-link {
+  text-decoration: none;
   font-size: 18px;
   color: #fff;
 }
@@ -77,7 +77,7 @@
   -webkit-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3 ease-in-out;
   transition: all 0.3 ease-in-out;
-  background-image: #fff;
+  background-color: #fff;
 }
 
 .back {
@@ -947,6 +947,7 @@ section {
   }
   .nav-menu {
     position: fixed;
+    left: -100%;
     top: 5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -964,8 +965,29 @@ section {
   .nav-menu.active {
     left: 0;
   }
+  .menu-link {
+    text-decoration: none;
+  }
   .menu-name {
-    margin: 2.5rem 0;
+    margin: 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: 30%;
+    left: 40%;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
   .back {
     background-position: top;

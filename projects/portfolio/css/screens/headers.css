@@ -41,11 +41,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  text-decoration: none;
   margin-left: 5rem;
 }
 
 .menu-link {
+  text-decoration: none;
   font-size: 18px;
   color: #fff;
 }
@@ -62,7 +62,7 @@
   -webkit-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3 ease-in-out;
   transition: all 0.3 ease-in-out;
-  background-image: #fff;
+  background-color: #fff;
 }
 
 .back {
