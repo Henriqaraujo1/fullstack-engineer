@@ -69,6 +69,7 @@ section {
 
 	.nav-menu{
 		position: fixed;
+		left: -100%;
 		top: 5rem;
 		flex-direction: column;
 		background-color: #000;
@@ -83,8 +84,35 @@ section {
 		left: 0;
 	}
 
+	.menu-link{
+		text-decoration: none;
+	}
+
 	.menu-name{
-		margin: 2.5rem 0;
+		margin: 0;
+	}
+
+	.hamburger {
+		display: block;
+		cursor: pointer;
+		position: relative;
+		top: 30%;
+		left: 40%;
+	}
+
+
+	.hamburger.active .bar:nth-child(2){
+		opacity: 0;
+	}
+
+	.hamburger.active .bar:nth-child(1) {
+		-webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburger.active .bar:nth-child(3){
+		-webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
 	}
 
 
