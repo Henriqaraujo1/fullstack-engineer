@@ -142,4 +142,18 @@
 .social .fig .github {
   width: 70%;
 }
+
+.back-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  height: 30px;
+}
+
+.back-home i {
+  color: white;
+}
 /*# sourceMappingURL=contact.css.map */

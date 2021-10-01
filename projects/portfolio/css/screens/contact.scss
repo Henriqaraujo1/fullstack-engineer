@@ -89,3 +89,13 @@
 		}
 		
 	}
+
+	.back-home{
+		display: flex;
+		justify-content: space-around;
+		width: 50%;
+		height: 30px;
+		i{
+			color: white;
+		}
+	}
