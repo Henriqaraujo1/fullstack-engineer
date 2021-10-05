@@ -102,6 +102,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -109,20 +111,22 @@
   font-size: 25px;
   width: 300px;
   max-height: 150px;
-  margin: 1.5em;
+  margin: 1.0em;
 }
 
-.title-name h2 {
+.title-name .home-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin-bottom: 0;
 }
 
-.title-name p {
+.title-name .home-name {
   margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,11 +134,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 18px;
 }
 
 .describe {
   width: 500px;
-  max-height: 250px;
+  max-height: 350px;
+}
+
+.describe .describe-me {
+  margin: 30px;
   font-size: 20px;
 }
 
@@ -159,6 +168,7 @@
           flex-direction: column;
   -ms-flex-line-pack: end;
       align-content: end;
+  margin-top: 1rem;
 }
 
 .container-skills h2 {
@@ -179,6 +189,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: auto;
@@ -222,6 +236,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 #project h2 {
@@ -231,36 +248,35 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .container-projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   width: 100%;
   height: 500px;
 }
 
 .container-projects .project-1 {
   width: 50%;
-  height: 60%;
+  height: 50%;
   background-color: gray;
 }
 
 .container-projects .project-2 {
   background-color: greenyellow;
   width: 50%;
-  height: 60%;
+  height: 50%;
 }
 
 .container-projects .project-3 {
@@ -295,18 +311,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
-#about-me h2 {
+#about-me .about-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 45px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  font-size: 30px;
 }
 
 #about-me .about {
@@ -328,7 +346,8 @@
 }
 
 #about-me .about .about-desc {
-  font-size: 16px;
+  margin: 30px;
+  font-size: 1rem;
 }
 
 #about-me .college {
@@ -353,11 +372,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 300px;
 }
 
 #about-me .college .unicesumar {
   width: 60%;
   border-radius: 100%;
+  background-position: bottom;
 }
 
 #about-me .college .codecademy {
@@ -366,8 +387,8 @@
 }
 
 #about-me .college-desc {
-  text-align: center;
-  margin-top: 15px;
+  margin: 35px;
+  font-size: 18px;
 }
 
 #contact {
@@ -382,7 +403,6 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  top: 1rem;
 }
 
 #contact h2 {
@@ -392,7 +412,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 #contact .f-contact {
@@ -403,6 +423,10 @@
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+#contact .f-contact .phrase {
+  width: 500px;
 }
 
 #contact form {
@@ -418,7 +442,7 @@
 
 #contact input {
   width: 100%;
-  height: 50px;
+  height: 30px;
   padding: 10px;
   border-radius: 25px;
   border: none;
@@ -453,7 +477,7 @@
   width: -moz-max-content;
   width: max-content;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .final-p {
@@ -505,11 +529,51 @@
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 100%;
+  width: 80%;
 }
 
 .social .fig .github {
-  width: 70%;
+  width: 50%;
+}
+
+.back-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  height: 30px;
+}
+
+.back-home i {
+  color: white;
+}
+
+.my-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+.my-footer h6 {
+  font-size: 12px;
+}
+
+.copy {
+  margin-left: 10px;
+}
+
+.design {
+  margin-right: 10px;
 }
 
 /**
@@ -530,13 +594,14 @@
   position: relative;
   top: 20px;
   border-radius: 30px;
-  height: 70px;
-  width: 200px;
+  height: 30px;
+  width: 150px;
   -webkit-box-shadow: 0px 1px 15px #4BB543;
           box-shadow: 0px 1px 15px #4BB543;
   border: none;
   color: #03e9f4;
   background-color: transparent;
+  font-size: 1rem;
 }
 
 .container-button .button:active {
@@ -890,7 +955,6 @@ template {
 /* Start style page project */
 body {
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Port Lligat Sans", sans-serif;
@@ -902,7 +966,6 @@ body {
 
 html {
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Port Lligat Sans", sans-serif;
@@ -912,7 +975,9 @@ html {
 }
 
 section {
-  height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -921,19 +986,16 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 3em;
 }
 
-@media (min-width: 361px) and (max-width: 465px) {
+@media (min-width: 320px) and (max-width: 465px) {
   body {
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
   }
   html {
-    height: 100%;
     width: 100%;
   }
   html p {
@@ -943,12 +1005,12 @@ section {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 4rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -993,10 +1055,13 @@ section {
     background-position: top;
   }
   .back .back-desc {
-    text-align: none;
+    text-align: center;
   }
   .describe {
     margin: 10px;
+  }
+  .describe .describe-me {
+    font-size: 18px;
   }
   .skills {
     display: -webkit-box;
@@ -1045,13 +1110,8 @@ section {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #about-me .about p {
-    margin-top: 10px;
-    text-align: justify;
-    margin: 10px;
-  }
   #contact {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
   #contact .phrase {
     height: -webkit-max-content;

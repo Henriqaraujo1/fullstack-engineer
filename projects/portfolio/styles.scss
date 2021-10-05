@@ -5,6 +5,7 @@
 @import './css/screens/project.scss';
 @import './css/screens/about-me.scss';
 @import './css/screens/contact.scss';
+@import './css/screens/footer.scss';
 
 
 // Imports variables, buttons, responsives-screens
@@ -18,7 +19,6 @@
 /* Start style page project */
 body {
 	width: 100%;
-	height: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: $Port-Lligat;
@@ -29,7 +29,6 @@ body {
 }
 html {
 	width: 100%;
-	height: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: $Port-Lligat;
@@ -38,24 +37,21 @@ html {
 	background-color: #000;
 }
 section {
-	height: 100vh;
+	height:  max-content;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-top: 3em;
 }
 
-@include media(">phone","<=465px"){
+@include media(">=phone","<=465px"){
 	body{
 		width: 100%;
-		height: 100%;
 		margin: 0;
 		padding: 0;
 	}
 
 	html{
-		height: 100%;
 		width: 100%;
 		p{
 			font-size: 16px;
@@ -64,13 +60,13 @@ section {
 
 	section{
 		height: max-content;
-		margin-top: 3rem;
+		margin-top: 2rem;
 	}
 
 	.nav-menu{
 		position: fixed;
 		left: -100%;
-		top: 5rem;
+		top: 4rem;
 		flex-direction: column;
 		background-color: #000;
 		width: 100%;
@@ -119,12 +115,15 @@ section {
 	.back{
 		background-position: top;
 		.back-desc{
-			text-align: none;
+			text-align: center;
 		}
 	}
 
 	.describe{
 		margin: 10px;
+		.describe-me{
+			font-size: 18px;
+		}
 	}
 
 	.skills{
@@ -138,8 +137,10 @@ section {
 			flex-wrap: wrap;
 		}
 	}
+
+
 	#about-me{
-		
+
 		.about{
 			display: flex;
 			flex-direction: column;
@@ -152,15 +153,10 @@ section {
 				display: flex;
 				justify-content: center;
 			}
-			p{
-				margin-top: 10px;
-				text-align: justify;
-				margin: 10px;
-			}
 		}
 	}
 	#contact{
-		margin-bottom: 100px;
+		margin-bottom: 20px;
 		.phrase{
 			height: max-content;
 		}
@@ -196,9 +192,6 @@ section {
 
 	}
 }
-
-
-
 
 
 	
