@@ -1,12 +1,11 @@
-
 #project {
 	display: flex;
 	flex-direction: column;
-	margin-top: 5.5rem;
+	height: max-content;
 	h2 {
 		display: flex;
 		justify-content: center;
-		font-size: 25px;
+		font-size: 30px;
 	}
 }
 .container-projects {
@@ -18,13 +17,13 @@
 	height: 500px;
 	.project-1 {
 		width: 50%;
-		height: 60%;
+		height: 50%;
 		background-color: gray;
 	}
 	.project-2 {
 		background-color: greenyellow;
 		width: 50%;
-		height: 60%;
+		height: 50%;
 	}
 	.project-3 {
 		display: flex;

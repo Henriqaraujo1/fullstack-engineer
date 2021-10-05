@@ -13,7 +13,6 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  top: 1rem;
 }
 
 #contact h2 {
@@ -23,7 +22,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 #contact .f-contact {
@@ -34,6 +33,10 @@
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+#contact .f-contact .phrase {
+  width: 500px;
 }
 
 #contact form {
@@ -49,7 +52,7 @@
 
 #contact input {
   width: 100%;
-  height: 50px;
+  height: 30px;
   padding: 10px;
   border-radius: 25px;
   border: none;
@@ -84,7 +87,7 @@
   width: -moz-max-content;
   width: max-content;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .final-p {
@@ -136,11 +139,11 @@
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 100%;
+  width: 80%;
 }
 
 .social .fig .github {
-  width: 70%;
+  width: 50%;
 }
 
 .back-home {

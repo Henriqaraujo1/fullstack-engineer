@@ -37,15 +37,14 @@ html {
 	background-color: #000;
 }
 section {
-	height: 100vh;
+	height:  max-content;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-top: 3em;
 }
 
-@include media(">320px","<=465px"){
+@include media(">=phone","<=465px"){
 	body{
 		width: 100%;
 		margin: 0;
@@ -60,8 +59,8 @@ section {
 	}
 
 	section{
-		height: 100vh;
-		margin: 0;
+		height: max-content;
+		margin-top: 2rem;
 	}
 
 	.nav-menu{
@@ -122,6 +121,9 @@ section {
 
 	.describe{
 		margin: 10px;
+		.describe-me{
+			font-size: 18px;
+		}
 	}
 
 	.skills{
@@ -135,8 +137,10 @@ section {
 			flex-wrap: wrap;
 		}
 	}
+
+
 	#about-me{
-		
+
 		.about{
 			display: flex;
 			flex-direction: column;
@@ -149,15 +153,10 @@ section {
 				display: flex;
 				justify-content: center;
 			}
-			p{
-				margin-top: 10px;
-				text-align: justify;
-				margin: 10px;
-			}
 		}
 	}
 	#contact{
-		margin-bottom: 100px;
+		margin-bottom: 20px;
 		.phrase{
 			height: max-content;
 		}
@@ -193,9 +192,6 @@ section {
 
 	}
 }
-
-
-
 
 
 	
