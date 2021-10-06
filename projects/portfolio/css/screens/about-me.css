@@ -46,6 +46,13 @@
 #about-me .about .about-desc {
   margin: 30px;
   font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
 }
 
 #about-me .college {
@@ -87,5 +94,11 @@
 #about-me .college-desc {
   margin: 35px;
   font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=about-me.css.map */

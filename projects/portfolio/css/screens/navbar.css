@@ -20,7 +20,7 @@
   background-color: #000;
 }
 
-@media (min-width: 361px) and (max-width: 465px) {
+@media (min-width: 321px) and (max-width: 465px) {
   .menu {
     position: fixed;
     left: -100%;
