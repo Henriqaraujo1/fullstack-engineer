@@ -81,7 +81,6 @@
 }
 
 .back {
-  display: none;
   background-image: url("/projects/portfolio/img/back.jpg");
   background-size: cover;
   border-radius: 15px;
@@ -96,9 +95,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: -2;
 }
 
-.back:focus {
+.back:hover {
   -webkit-animation: back 5s ease-out both;
   animation: back 5s ease-out both;
 }
@@ -1097,10 +1097,10 @@ section {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
   }
-  .back {
+  .back-desc {
     background-position: top;
   }
-  .back .back-desc {
+  .back-desc .back-desc {
     text-align: center;
   }
   .describe {
