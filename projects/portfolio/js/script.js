@@ -15,4 +15,5 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-//Form
+//Check inputs
+
