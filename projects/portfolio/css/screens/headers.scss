@@ -1,4 +1,5 @@
 @import '../variables/variables.scss';
+@import '../breakpoints/breakpoints.scss';
 
 .icon {
 	margin: 10px;
@@ -57,37 +58,41 @@
 	justify-content: center;
 }
 
-.back:hover {
-	-webkit-animation: back 5s ease-out both;
-	        animation: back 5s ease-out both;
-}
 
- @-webkit-keyframes back {
-	0% {
-	  -webkit-transform: scale(1) translateY(0);
-			  transform: scale(1) translateY(0);
-	  -webkit-transform-origin: 50% 84%;
-			  transform-origin: 50% 84%;
+
+@include media(">1000px"){
+	.back:hover {
+		-webkit-animation: back 5s ease-out both;
+				animation: back 5s ease-out both;
 	}
-	100% {
-	  -webkit-transform: scale(1.25) translateY(15px);
-			  transform: scale(1.25) translateY(15px);
-	  -webkit-transform-origin: bottom;
-			  transform-origin: bottom;
-	}
-  }
-  @keyframes back {
-	0% {
-	  -webkit-transform: scale(1) translateY(0);
-			  transform: scale(1) translateY(0);
-	  -webkit-transform-origin: 50% 84%;
-			  transform-origin: 50% 84%;
-	}
-	100% {
-	  -webkit-transform: scale(1.25) translateY(15px);
-			  transform: scale(1.25) translateY(15px);
-	  -webkit-transform-origin: bottom;
-			  transform-origin: bottom;
-	}
-  }
-  
+	
+	 @-webkit-keyframes back {
+		0% {
+		  -webkit-transform: scale(1) translateY(0);
+				  transform: scale(1) translateY(0);
+		  -webkit-transform-origin: 50% 84%;
+				  transform-origin: 50% 84%;
+		}
+		100% {
+		  -webkit-transform: scale(1.25) translateY(15px);
+				  transform: scale(1.25) translateY(15px);
+		  -webkit-transform-origin: bottom;
+				  transform-origin: bottom;
+		}
+	  }
+	  @keyframes back {
+		0% {
+		  -webkit-transform: scale(1) translateY(0);
+				  transform: scale(1) translateY(0);
+		  -webkit-transform-origin: 50% 84%;
+				  transform-origin: 50% 84%;
+		}
+		100% {
+		  -webkit-transform: scale(1.25) translateY(15px);
+				  transform: scale(1.25) translateY(15px);
+		  -webkit-transform-origin: bottom;
+				  transform-origin: bottom;
+		}
+	  }
+	  
+}
