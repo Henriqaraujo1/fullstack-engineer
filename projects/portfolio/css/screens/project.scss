@@ -18,28 +18,37 @@
 	.project-1 {
 		width: 50%;
 		height: 50%;
-		background-color: gray;
+		.project-img1{
+			width: 100%;
+		}
+		  
 	}
 	.project-2 {
-		background-color: greenyellow;
 		width: 50%;
 		height: 50%;
+		.project-img2{
+			width: 100%;
+		}
 	}
 	.project-3 {
-		display: flex;
-		background-color: hotpink;
 		width: 25%;
 		height: 50%;
+		.project-img3{
+			width: 100%;
+		}
 	}
 	.project-4 {
-		flex-grow: 1;
-		background-color: indianred;
 		width: 50%;
 		height: 50%;
+		.project-img4{
+			width: 100%;
+		}
 	}
 	.project-5 {
-		background-color: gold;
 		width: 25%;
 		height: 50%;
+		.project-img5{
+			width: 100%;
+		}
 	}
 }
