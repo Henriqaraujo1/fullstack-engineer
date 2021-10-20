@@ -275,9 +275,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
 }
 
 #project h2 {
@@ -322,6 +319,7 @@
 
 .container-projects .project-2 .project-img2 {
   width: 100%;
+  height: 100%;
 }
 
 .container-projects .project-3 {
@@ -331,6 +329,7 @@
 
 .container-projects .project-3 .project-img3 {
   width: 100%;
+  height: 100%;
 }
 
 .container-projects .project-4 {
@@ -340,6 +339,7 @@
 
 .container-projects .project-4 .project-img4 {
   width: 100%;
+  height: 100%;
 }
 
 .container-projects .project-5 {
@@ -349,6 +349,7 @@
 
 .container-projects .project-5 .project-img5 {
   width: 100%;
+  height: 100%;
 }
 
 #about-me {
@@ -371,7 +372,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10px;
+  margin-top: 2rem;
   font-size: 30px;
 }
 
@@ -1143,6 +1144,39 @@ section {
         justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  #project {
+    margin: 0 auto;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  #project .container-projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  #project .project-1 {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  #project .project-2 {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  #project .project-3 {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  #project .project-4 {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  #project .project-5 {
+    width: 100%;
   }
   #about-me .about {
     display: -webkit-box;
