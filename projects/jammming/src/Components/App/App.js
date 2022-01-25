@@ -6,11 +6,13 @@ import Playlist from '../Playlist/Playlist';
 function App() {
   return (
     <div>
-      <h1>Ja<span className="highlight">mmm</span>ing</h1>
-      <SearchBar />
-      <div className="App-playlist">
-        <SearchResults />
-        <Playlist />
+      <h1>Ja<span class="highlight">mmm</span>ing</h1>
+      <div class="App">
+        <SearchBar />
+        <div class="App-playlist">
+          <SearchResults />
+          <Playlist />
+        </div>
       </div>
     </div>
   );
