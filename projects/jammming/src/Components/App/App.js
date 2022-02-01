@@ -32,10 +32,10 @@ class App extends React.Component {
   }
 
   removeTrack(track){
-    let tracksOut = this.state.playlistTracks;
-    tracksOut = tracksOut.filter(removedTrack => removedTrack.id !== track.id)
+    let tracks = this.state.playlistTracks;
+    tracks = tracks.filter(removedTrack => removedTrack.id !== track.id)
 
-    this.setState({playlistTracks : tracksOut})
+    this.setState({playlistTracks : tracks})
   }
 
   updatePlaylistName(name) {
@@ -55,8 +55,8 @@ class App extends React.Component {
     
   }
 
-  search(searchItem){
-    Spotify.search(searchItem).then(searchResults => {
+  search(term){
+    Spotify.search(term).then(searchResults => {
       this.setState({searchResults: searchResults})
     });
   }
@@ -73,7 +73,7 @@ class App extends React.Component {
             <Playlist playlistTracks={this.state.playlistTracks}
                       onRemove={this.removeTrack}
                       onNameChange={this.updatePlaylistName}
-                      onSave={this.savePlaylist}/>
+                      onSave={this.savePlaylist} />
           </div>
         </div>
       </div>
