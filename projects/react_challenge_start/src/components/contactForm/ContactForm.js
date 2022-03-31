@@ -30,7 +30,7 @@ export const ContactForm = ({
             onChange={(e) => setPhone(e.target.value)}
             required
             pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"
-            placeholder="Number Contact"
+            placeholder="Number Contact - Example (xx) xxxxx-xxxx"
           />
         </label>
         <label>
@@ -43,7 +43,7 @@ export const ContactForm = ({
             placeholder="E-mail Contact"
           />
         </label>
-        <input type="submit" value="add Contact" />
+        <input type="submit" value="Add Contact" />
       </form>
     </div>
   );
