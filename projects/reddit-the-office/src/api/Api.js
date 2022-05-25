@@ -1,0 +1,1 @@
+export const Api = await fetch('www.reddit.com/')
