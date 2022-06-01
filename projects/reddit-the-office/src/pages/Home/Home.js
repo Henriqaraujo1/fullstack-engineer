@@ -1,14 +1,25 @@
 import React from "react";
-import { DivHome, DivOrgTitle, IconGroup, TitleHome } from "./HomeStyle";
-
+import {
+  DivHome,
+  DivOrgTitle,
+  DivImg,
+  IconGroup,
+  TitleHome,
+} from "./HomeStyle";
+import IconPage from "../../utils/images/iconpage.ico";
+import Article from "../../components/Article/Article";
 export default function Home() {
-  console.log('teste')
+  console.log("teste");
   return (
     <DivHome>
       <DivOrgTitle>
-        <IconGroup></IconGroup>
-        <TitleHome></TitleHome>
+        <DivImg>
+          <IconGroup src={IconPage} alt="icon title"/>
+        </DivImg>
+        <TitleHome>The office Reddit</TitleHome>
       </DivOrgTitle>
+      <Article />
+      <Article />
     </DivHome>
   );
 }

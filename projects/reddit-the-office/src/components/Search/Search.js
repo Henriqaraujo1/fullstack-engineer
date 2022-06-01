@@ -1,10 +1,16 @@
 import React from "react";
-import { DivSearch, InputSearch } from "./SearchStyle";
+import { Search } from "@styled-icons/material";
+import { DivSearch, InputSearch, LabelSearch, SpanSearch, FormSearch } from "./SearchStyle";
 
-export default function Search() {
+export default function SearchReddit() {
   return (
     <DivSearch>
-      <InputSearch />
+      <FormSearch>
+        <LabelSearch>
+          <SpanSearch><Search /></SpanSearch>
+          <InputSearch type="search"/>
+        </LabelSearch>
+      </FormSearch>
     </DivSearch>
   );
 }

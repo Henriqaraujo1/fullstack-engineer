@@ -13,7 +13,7 @@ export default function Article() {
     <DivArticle>
       <DivTop>
         {/* <UpDown /> */}
-        <TitleArticle></TitleArticle>
+        <TitleArticle>Post 1</TitleArticle>
       </DivTop>
       <FigureArticle>
         <ImgArticle></ImgArticle>

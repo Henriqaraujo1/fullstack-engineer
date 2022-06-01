@@ -5,10 +5,9 @@ export const DivNavBar = styled.div`
   border: 1px solid black;
   padding: 10px;
   display: flex;
+  background-color: rgba(213, 145, 255, 0.8);
 `;
-export const Nav = styled.nav`
-  border: 1px solid green;
-`;
+
 export const ImgLogo = styled.img`
   width: 25%;
   border-radius: 100%;
@@ -20,9 +19,7 @@ export const TitlePage = styled.span`
   /* text-align: center; */
 `;
 export const NavBarLink = styled(Link)`
-  border: 10px solid pink;
   width: 15%;
-  border: 1px solid red;
   padding: 5px;
   display: flex;
   justify-content: flex-start;
