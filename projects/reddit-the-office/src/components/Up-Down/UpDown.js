@@ -1,3 +1,4 @@
+import { ThumbDown, ThumbUp } from "@styled-icons/material";
 import React from "react";
 import {
   CountLike,
@@ -10,11 +11,15 @@ import {
 export default function UpDown() {
   return (
     <DivUpDown>
-      <IconUp></IconUp>
+      <IconUp>
+        <ThumbUp />
+      </IconUp>
       <CountLike>
-        <SpanNumber></SpanNumber>
+        <SpanNumber>35K</SpanNumber>
       </CountLike>
-      <IconDown></IconDown>
+      <IconDown>
+        <ThumbDown />
+      </IconDown>
     </DivUpDown>
   );
 }

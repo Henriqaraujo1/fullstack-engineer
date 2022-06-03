@@ -1,4 +1,6 @@
 import React from "react";
+import CommentsButton from "../CommentsButton/CommentsButton";
+import UpDown from "../Up-Down/UpDown";
 import {
   DivArticle,
   DivTop,
@@ -6,20 +8,20 @@ import {
   FigureArticle,
   ImgArticle,
   TitleArticle,
-} from "./ArticleStyle";
+} from "./PostStyle";
 
-export default function Article() {
+export default function Post() {
   return (
     <DivArticle>
       <DivTop>
-        {/* <UpDown /> */}
+        <UpDown />
         <TitleArticle>Post 1</TitleArticle>
       </DivTop>
       <FigureArticle>
         <ImgArticle></ImgArticle>
-        <FigCaptionAuthor></FigCaptionAuthor>
+        <FigCaptionAuthor>Post By Author</FigCaptionAuthor>
       </FigureArticle>
-      {/* <Comments /> */}
+      <CommentsButton />
     </DivArticle>
   );
 }

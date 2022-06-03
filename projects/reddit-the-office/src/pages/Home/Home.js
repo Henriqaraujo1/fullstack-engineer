@@ -7,7 +7,7 @@ import {
   TitleHome,
 } from "./HomeStyle";
 import IconPage from "../../utils/images/iconpage.ico";
-import Article from "../../components/Article/Article";
+import Post from "../../components/Post/Post";
 export default function Home() {
   console.log("teste");
   return (
@@ -18,8 +18,8 @@ export default function Home() {
         </DivImg>
         <TitleHome>The office Reddit</TitleHome>
       </DivOrgTitle>
-      <Article />
-      <Article />
+      <Post />
+      <Post />
     </DivHome>
   );
 }
