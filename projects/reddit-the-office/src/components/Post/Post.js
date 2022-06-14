@@ -13,6 +13,7 @@ import {
 export default function Post() {
   return (
     <DivArticle>
+      
       <DivTop>
         <UpDown />
         <TitleArticle>Post 1</TitleArticle>
