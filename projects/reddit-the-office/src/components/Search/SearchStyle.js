@@ -4,8 +4,8 @@ export const DivSearch = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    margin-left: 15px;
+    width: 50%;
+    /* margin-left: 15px; */
 `
 export const LabelSearch = styled.label`
     display: flex;

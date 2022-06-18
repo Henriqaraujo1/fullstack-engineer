@@ -1,11 +1,12 @@
 import {createSlice, createSelector} from '@reduxjs/toolkit';
-import { getDataReddit } from '../api/Api';
+import { getDataReddit, getPostComments } from '../api/Api';
 
 const initialState = {
     posts: [],
     error: false,
     isLoading: false,
     searchTerm: '',
+    selectedSubreddit: '/r/DunderMifflin/',
 };
 
 const redditSlice = createSlice({
@@ -29,6 +30,10 @@ const redditSlice = createSlice({
         },
         setSearchTerm(state, action) {
             state.searchTerm = action.payload;
+        },
+        setSelectedSubreddit(state, action) {
+            state.selectedSubreddit = action.payload;
+            state.searchTerm = '';
         },
         toggleShowingComments(state, action) {
             state.posts[action.payload].showingComments = !state.posts[action.payload]
@@ -60,7 +65,9 @@ export const {
     getPostFailed,
     getPostSuccess,
     setSearchTerm,
+    setSelectedSubreddit,
     toggleShowingComments,
+    startGetComments,
     getCommentsFailed,
     getCommentsSuccess
 } = redditSlice.actions;
@@ -96,10 +103,9 @@ export const fetchComments = (index, permaLink) => async (dispatch) => {
 };
 
 const selectPosts = (state) => state.reddit.posts;
-const selectSearchTerm( state) => state.reddit.searchTerm;
-export const selectSelectedSubreddit = (state) => {
-    state.reddit.selectSubreddit;
-}
+const selectSearchTerm = (state) => state.reddit.searchTerm;
+export const selectSelectedSubreddit = (state) =>
+    state.reddit.selectedSubreddit;
 
 export const selectFilteredPosts = createSelector(
     [selectPosts, selectSearchTerm],

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const DivArticle = styled.div`
-    height: 100%;
     border: 1px solid black;
     margin: 10px;
     padding: 10px;
@@ -9,15 +8,31 @@ export const DivArticle = styled.div`
 export const DivTop = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
 `;
 export const TitleArticle = styled.h2`
-
+    margin-left: 15px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 export const FigureArticle = styled.figure`
     width: 70%;
     margin: auto;
     /* height: 100%; */
-    border: 1px solid red;
 `;
-export const ImgArticle = styled.img``;
-export const FigCaptionAuthor = styled.figcaption``;
+export const ImgArticle = styled.img`
+    width: 100%;
+    border-radius: 25px;
+`;
+export const FigCaptionAuthor = styled.figcaption`
+    
+`;
+export const SpanAuthor = styled.span`
+    font-style: italic;
+    font-size: 18px;
+    color: #FC3928;
+`;

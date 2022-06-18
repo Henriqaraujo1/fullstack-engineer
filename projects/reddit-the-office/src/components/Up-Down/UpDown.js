@@ -8,14 +8,15 @@ import {
   SpanNumber,
 } from "./UpDownStyle";
 
-export default function UpDown() {
+export default function UpDown(props) {
+  const { post } = props
   return (
     <DivUpDown>
       <IconUp>
         <ThumbUp />
       </IconUp>
       <CountLike>
-        <SpanNumber>35K</SpanNumber>
+        <SpanNumber>{post.ups}</SpanNumber>
       </CountLike>
       <IconDown>
         <ThumbDown />

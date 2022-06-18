@@ -7,6 +7,10 @@ export const DivHome = styled.div`
     width: 50%;
     height: 100%;
     margin: 5px auto;
+
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+        width: 90%;
+    }
 `;  
 export const DivOrgTitle = styled.div`
     width: 100%;
@@ -20,7 +24,7 @@ export const DivOrgTitle = styled.div`
 `;
 
 export const DivImg = styled.div`
-    width: 15%;
+    width: 25%;
     padding: 10px;
 `
 

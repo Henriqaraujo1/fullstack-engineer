@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 
-export const DivCommentsArticle = styled.div``;
+export const DivCommentsArticle = styled.div`
+    width: 100%;
+    display: ${({open}) => (open ? "flex" : "none")};
+    border: 1px solid black;
+`;
 export const DivCommentAuthor = styled.div``;
 export const IconAuthor = styled.div`
     width: 10%;

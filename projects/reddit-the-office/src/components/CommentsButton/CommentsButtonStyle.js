@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 
-export const DivComments = styled.div`
+export const Comments = styled.div`
+  width: 100%;
   padding: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-end;
   margin: auto;
-
 `;
 
 export const IconComments = styled.div`
@@ -23,8 +25,7 @@ export const SpanComments = styled.span`
     } */
 `;
 
-export const DivCommentsLink = styled(Link)`
-  width: 15%;
+export const DivCommentsLink = styled.div`
   padding: 5px;
   display: flex;
   flex-direction: row;
@@ -40,8 +41,23 @@ export const DivCommentsLink = styled(Link)`
     &:hover {
         box-shadow: inset 110px 0 0 0 #54b3d6;
         color: #fff;
+        cursor: pointer;
         ${IconComments} {
             color: #fff;
         }
     }
 `;
+
+export const DivComments = styled.div`
+    width: 100%;
+    display: ${({open}) => (open ? "flex" : "none")};
+    border: 1px solid black;
+`;
+export const DivCommentAuthor = styled.div``;
+export const IconAuthor = styled.div`
+    width: 10%;
+    border: 1px solid darkblue;
+`;
+export const AuthorName = styled.h4``;
+export const CommentsAuthor = styled.p``;
+

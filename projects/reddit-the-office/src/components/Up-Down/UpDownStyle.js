@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
 export const DivUpDown = styled.div`
-  width: 5%;
+  width: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5px;
-  margin-right: 15px;
 `;
 export const IconUp = styled.div`
-  width: 100%;
+  width: 30px;
   color: #5ec137;
   &:hover {
     cursor: pointer;
@@ -18,18 +16,22 @@ export const IconUp = styled.div`
   &:active {
     transform: translateY(-4px);
   }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    width: 100%;    
+  }
 `;
 export const CountLike = styled.div`
-  height: 25px;
+  /* height: 25px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.25rem;
+`;
+export const SpanNumber = styled.span`
+    font-size: 1rem;
   font-style: italic;
 `;
-export const SpanNumber = styled.span``;
 export const IconDown = styled.div`
-  width: 100%;
+  width: 30px;
   color: #fd4d4b;
   background-color: none;
   &:hover {
@@ -37,5 +39,8 @@ export const IconDown = styled.div`
   }
   &:active {
     transform: translateY(4px);
+  }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    width: 100%;    
   }
 `;
