@@ -1,63 +1,51 @@
 import styled from "styled-components";
-import { NavLink as Link } from "react-router-dom";
 
-export const Comments = styled.div`
+
+function randomInteger(max) {
+    return Math.floor(Math.random()*(max + 1));
+}
+
+function randomRgbColor() {
+    let r = randomInteger(255);
+    let g = randomInteger(255);
+    let b = randomInteger(255);
+    return [r,g,b];
+}
+
+function randomHexColor() {
+    let [r,g,b] = randomRgbColor();
+ 
+    let hr = r.toString(16).padStart(2, '0');
+    let hg = g.toString(16).padStart(2, '0');
+    let hb = b.toString(16).padStart(2, '0');
+ 
+    return "#" + hr + hg + hb;
+}
+
+export const DivComment = styled.div`
   width: 100%;
+  border: 1px solid black;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 3px, rgba(240, 46, 170, 0.3) 0px 6px,
+    rgba(240, 46, 170, 0.2) 0px 9px, rgba(240, 46, 170, 0.1) 0px 12px,
+    rgba(240, 46, 170, 0.05) 0px 15px;
+  border-radius: 25px;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin: auto;
+  margin-bottom: 15px;
 `;
-
-export const IconComments = styled.div`
-  width: 30%;
-  margin-right: 10px;
-  color: #54b3d6;
-
-`;
-
-export const SpanComments = styled.span`
-    /* color: #000; */
-    /* ${IconComments}:hover & {
-        color: #fff;
-    } */
-`;
-
-export const DivCommentsLink = styled.div`
-  padding: 5px;
+export const DivAvatar = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;  
-  text-decoration: none;
-  box-shadow: inset 0 0 0 0 #54b3d6;
-  border-radius: 25px;
-    color: #54b3d6;
-    margin: 0 -.25rem;
-    padding: 0 .20rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-
-    &:hover {
-        box-shadow: inset 110px 0 0 0 #54b3d6;
-        color: #fff;
-        cursor: pointer;
-        ${IconComments} {
-            color: #fff;
-        }
-    }
+  margin-bottom: 5px;
 `;
-
-export const DivComments = styled.div`
-    width: 100%;
-    display: ${({open}) => (open ? "flex" : "none")};
-    border: 1px solid black;
+export const AvatarAuthor = styled.img`
+  width: 10%;
+  border-radius: 100%;
+  background-color: ${randomHexColor()};
 `;
-export const DivCommentAuthor = styled.div``;
-export const IconAuthor = styled.div`
-    width: 10%;
-    border: 1px solid darkblue;
+export const NameAuthor = styled.h5`
+  display: flex;
+  align-items: center;
 `;
-export const AuthorName = styled.h4``;
-export const CommentsAuthor = styled.p``;
-
+export const CommentAuthor = styled.p``;

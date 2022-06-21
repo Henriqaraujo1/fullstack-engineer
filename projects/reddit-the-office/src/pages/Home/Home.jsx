@@ -23,7 +23,7 @@ export default function Home() {
 
   useEffect(() => {
     dispatch(fetchPosts(selectedSubreddit));
-  }, [selectedSubreddit]);
+  }, [dispatch, selectedSubreddit]);
 
   function onToggleComments(index) {
     const getComments = (permaLink) => {
