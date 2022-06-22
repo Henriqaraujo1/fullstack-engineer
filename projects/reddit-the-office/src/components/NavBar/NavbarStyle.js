@@ -12,6 +12,7 @@ export const DivNavBar = styled.div`
 
 export const ImgLogo = styled.img`
   width: 20%;
+  margin-right: 10px;
   border-radius: 100%;
   background-color: #000;
 `;

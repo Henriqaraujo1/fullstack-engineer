@@ -41,6 +41,7 @@ export const DivAvatar = styled.div`
 `;
 export const AvatarAuthor = styled.img`
   width: 10%;
+  margin-right: 10px;
   border-radius: 100%;
   background-color: ${randomHexColor()};
 `;
@@ -48,4 +49,6 @@ export const NameAuthor = styled.h5`
   display: flex;
   align-items: center;
 `;
-export const CommentAuthor = styled.p``;
+export const CommentAuthor = styled.p`
+  font-size: 1rem;
+`;

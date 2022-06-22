@@ -39,7 +39,7 @@ export default function Home() {
         <DivImg>
           <IconGroup src={IconPage} alt="icon title"/>
         </DivImg>
-        <TitleHome>The office Reddit</TitleHome>
+        <TitleHome>The Office Reddit</TitleHome>
       </DivOrgTitle>
       {console.log(posts)}
       {posts.map((post, index) => (

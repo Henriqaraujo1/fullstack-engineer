@@ -35,10 +35,12 @@ export const ImgArticle = styled.img`
   width: 100%;
   border-radius: 25px;
 `;
-export const FigCaptionAuthor = styled.figcaption``;
+export const FigCaptionAuthor = styled.figcaption`
+  font-size: 0.9rem;
+`;
 export const SpanAuthor = styled.span`
   font-style: italic;
-  font-size: 18px;
+  font-size: 1rem;
   color: #fc3928;
 `;
 export const DivBtnComment = styled.div`
@@ -47,19 +49,19 @@ export const DivBtnComment = styled.div`
   justify-content: flex-end;
 `;
 export const IconComments = styled.div`
-  width: 15%;
+  width: 15px;
   margin-right: 10px;
   color: #54b3d6;
 `;
 
 export const BtnComment = styled.button`
-  width: 30%;
   height: 30px;
   border: 0 solid transparent;
   background-color: transparent;
   padding: 5px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   box-shadow: inset 0 0 0 0 #54b3d6;
@@ -69,7 +71,7 @@ export const BtnComment = styled.button`
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
   &:hover {
-    box-shadow: inset 200px 0 0 0 #54b3d6;
+    box-shadow: inset 150px 0 0 0 #54b3d6;
     color: #fff;
     cursor: pointer;
     ${IconComments} {

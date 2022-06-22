@@ -29,3 +29,7 @@ export const InputSearch = styled.input`
     border-radius: 25px;
     border: 0.5px solid #000;
 `
+
+export const BtnSearch = styled.button`
+    display: none;
+`
