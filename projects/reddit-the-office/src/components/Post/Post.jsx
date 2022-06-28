@@ -15,6 +15,7 @@ import {
   ImgArticle,
   SpanAuthor,
   TitleArticle,
+  VideoArticle,
 } from "./PostStyle";
 
 export default function Post(props) {
@@ -49,6 +50,32 @@ export default function Post(props) {
     }
   };
 
+  const renderMedia = () => {
+    if (post.is_gallery) {
+      return (
+        <>
+            <img src={post.thumbnail} alt="" />
+        </>
+      );
+    }
+    if (post.is_video) {
+      return (
+        <>
+          <VideoArticle src={post.thumbnail} controls></VideoArticle>
+        </>
+      );
+    }
+    if (post.url) {
+      return (
+        <>
+          <ImgArticle src={post.url} alt=""/>
+        </>
+            
+
+      )
+    }
+  };
+
   return (
     <DivArticle key={post.id}>
       <DivTop>
@@ -57,7 +84,7 @@ export default function Post(props) {
         <TitleArticle>{post.title}</TitleArticle>
       </DivTop>
       <FigureArticle>
-        <ImgArticle src={post.url}></ImgArticle>
+        {renderMedia()}
         <FigCaptionAuthor>
           Post By <SpanAuthor>{post.author}</SpanAuthor>
         </FigCaptionAuthor>
@@ -78,4 +105,4 @@ export default function Post(props) {
       {renderComment()}
     </DivArticle>
   );
-}
+        }

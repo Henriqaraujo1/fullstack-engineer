@@ -43,6 +43,10 @@ export const SpanAuthor = styled.span`
   font-size: 1rem;
   color: #fc3928;
 `;
+
+export const VideoArticle = styled.video``;
+export const SourceVideo = styled.source``;
+
 export const DivBtnComment = styled.div`
   width: 100%;
   display: flex;

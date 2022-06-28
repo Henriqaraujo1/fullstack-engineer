@@ -17,7 +17,7 @@ import {
 
 export default function Home() {
   const reddit = useSelector((state) => state.reddit);
-  const {selectedSubreddit} = reddit;
+  const {error,selectedSubreddit} = reddit;
   const posts = useSelector(selectFilteredPosts);
   const dispatch = useDispatch();
 
@@ -31,6 +31,18 @@ export default function Home() {
     };
 
     return getComments;
+  }
+
+
+  if (error) {
+    return (
+      <>
+        <h2> Failed to load Post. Sorry</h2>
+      <button type="button" onClick={() => dispatch(fetchPosts(selectedSubreddit))} />
+
+      </>
+      
+    )
   }
 
   return (

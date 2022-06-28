@@ -7,9 +7,11 @@ export const DivUpDown = styled.div`
   justify-content: center;
   align-items: center;
 `;
-export const IconUp = styled.div`
+export const IconUp = styled.button`
   width: 30px;
   color: #5ec137;
+  border: none;
+  background-color: transparent;
   &:hover {
     cursor: pointer;
   }
