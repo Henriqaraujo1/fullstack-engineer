@@ -1,13 +1,12 @@
 import React from "react";
 import {
-  DivLogo,
   DivNavBar,
   ImgLogo,
-  Nav,
   NavBarLink,
   TitlePage,
 } from "./NavbarStyle";
 import Logo from "../../utils/images/mike.png";
+import SearchReddit from "../Search/Search";
 
 const NavBar = () => {
   return (
@@ -15,9 +14,8 @@ const NavBar = () => {
         <NavBarLink to="/">
             <ImgLogo src={Logo} />
             <TitlePage>Reddit The Office</TitlePage>
-          
         </NavBarLink>
-        {/* <Search /> */}
+        <SearchReddit />
     </DivNavBar>
   );
 };
