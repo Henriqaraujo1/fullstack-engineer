@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Search } from "@styled-icons/material";
+import { Close, Search } from "@styled-icons/material";
 import {
   DivSearch,
   InputSearch,
@@ -15,6 +15,8 @@ import { useDispatch } from "react-redux";
 
 export default function SearchReddit() {
   const [searchTermLocal, setSearchTermLocal] = useState("");
+  const [show, setShow] = useState(false)
+
   const searchTerm = useSelector((state) => state.reddit.searchTerm);
   const dispatch = useDispatch();
 
@@ -31,21 +33,33 @@ export default function SearchReddit() {
     dispatch(setSearchTerm(searchTermLocal));
   };
 
+  const onSearchBlank = () => {
+    setSearchTermLocal(searchTermLocal)
+  }
+
   return (
     <DivSearch>
       <FormSearch>
         <LabelSearch>
-          <SpanSearch>
+          
+          <InputSearch
+            value={searchTermLocal}
+            onChange={onSearchTermChange}
+            onSubmit={onSearchTermSubmit}
+            
+            onClick={() => {
+              setShow(!show)
+            }}
+          />
+          <SpanSearch onClick={onSearchTermSubmit}>
             <Search />
           </SpanSearch>
-          <InputSearch
-            type="search"
-            value={searchTermLocal}
-            onChange={onSearchTermChange}           
-            // onSubmit={onSearchTermSubmit}  
-          />
+          <BtnSearch onClick={onSearchBlank} show={show}>
+            <Close />
+          </BtnSearch>
+          
+          
         </LabelSearch>
-        <BtnSearch onClick={onSearchTermSubmit} />
       </FormSearch>
     </DivSearch>
   );

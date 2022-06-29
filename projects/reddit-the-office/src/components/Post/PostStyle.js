@@ -7,7 +7,8 @@ export const DivLoading = styled.div`
 `
 
 export const DivArticle = styled.div`
-  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 25px;
   margin: 10px;
   padding: 10px;
 `;

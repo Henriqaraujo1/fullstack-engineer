@@ -15,7 +15,6 @@ import {
   ImgArticle,
   SpanAuthor,
   TitleArticle,
-  VideoArticle,
 } from "./PostStyle";
 
 export default function Post(props) {
@@ -61,7 +60,7 @@ export default function Post(props) {
     if (post.is_video) {
       return (
         <>
-          <VideoArticle src={post.thumbnail} controls></VideoArticle>
+          <SpanAuthor>Sorry we don't receive the video</SpanAuthor>
         </>
       );
     }
@@ -70,8 +69,6 @@ export default function Post(props) {
         <>
           <ImgArticle src={post.url} alt=""/>
         </>
-            
-
       )
     }
   };
@@ -80,7 +77,6 @@ export default function Post(props) {
     <DivArticle key={post.id}>
       <DivTop>
         <UpDown post={post} />
-        {/* <AvatarAuthor src={`https://avatars.dicebear.com/api/adventurer/${post.author}`} /> */}
         <TitleArticle>{post.title}</TitleArticle>
       </DivTop>
       <FigureArticle>

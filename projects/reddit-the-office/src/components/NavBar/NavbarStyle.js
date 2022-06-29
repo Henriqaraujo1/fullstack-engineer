@@ -25,7 +25,6 @@ export const NavBarLink = styled(Link)`
   padding: 10px;
   display: flex;
   margin: auto;
-  /* justify-content: flex-start; */
   align-items: center;
   text-decoration: none;
   font-style: italic;

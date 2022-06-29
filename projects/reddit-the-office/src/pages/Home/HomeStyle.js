@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+
+export const DivLoadingPage = styled.div`
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
 export const DivHome = styled.div`
     display: flex;
     justify-content: center;
@@ -17,7 +26,8 @@ export const DivOrgTitle = styled.div`
     height: 25%;
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border-radius: 25px;
     justify-content: flex-start;
     margin-bottom: 10px;
     align-items: center;
