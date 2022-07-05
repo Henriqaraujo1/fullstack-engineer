@@ -1,12 +1,25 @@
 import React from "react";
-import { DivLogo, DivNavBar, ImgLogo, TitlePage } from "./NavbarStyle";
+import {
+  DivLogo,
+  DivNavBar,
+  ImgLogo,
+  Nav,
+  NavBarLink,
+  TitlePage,
+} from "./NavbarStyle";
+import Logo from "../../utils/images/mike.png";
 
-export default function NavBar() {
-  <DivNavBar>
-    <DivLogo>
-      <ImgLogo></ImgLogo>
-      <TitlePage></TitlePage>
-    </DivLogo>
-    {/* <Search /> */}
-  </DivNavBar>;
-}
+const NavBar = () => {
+  return (
+    <DivNavBar>
+        <NavBarLink to="/">
+            <ImgLogo src={Logo} />
+            <TitlePage>Reddit The Office</TitlePage>
+          
+        </NavBarLink>
+        {/* <Search /> */}
+    </DivNavBar>
+  );
+};
+
+export default NavBar;
