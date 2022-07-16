@@ -1,3 +1,8 @@
-# fullstack-engineer
-course of fullstack engineer codecademy
-### I learning the course and publish the projects and read some books and do the exercises 
+# Fullstack-Engineer - Repositorio dos projetos do cursos
+## Projetos do curso Fullstack Engineer da escola Codecademy.com
+
+### Dentro da pasta projects está separado por projetos Front-end e Back-End
+
+#### Meu perfil na plataforma da escola : https://www.codecademy.com/profiles/Henriqaraujo1
+
+
