@@ -33,14 +33,14 @@ ideasRouter.param("ideaId", (req, res, next, id) => {
 });
 
 ideasRouter.get("/:ideaId", (req, res) => {
-  res.status(201).send(req.findIdeadId);
+  res.status(200).send(req.findIdeadId);
 });
 
 ideasRouter.put("/:ideaId", (req, res) => {
   const ideaEdit = req.body;
   try {
     const editIdea = db.updateInstanceInDatabase("ideas", ideaEdit);
-    res.status(201).send(editIdea);
+    res.status(200).send(editIdea);
   } catch (e) {
     console.error(e.message);
     res.sendStatus(404);
@@ -51,7 +51,7 @@ ideasRouter.delete('/:ideaId', (req, res) => {
   const ideaIdDelete = req.params.ideaId;
   try {
     const deleteIdea = db.deleteAllFromDatabase("ideas", ideaIdDelete);
-    res.status(201).send(deleteIdea)
+    res.status(204).send(deleteIdea)
   } catch (e) {
     console.error(e.message)
     res.sendStatus(404);
