@@ -4,5 +4,5 @@ const getRandomElement = arr => {
 }
 
 module.exports = {
-  getRandomElement
+  getRandomElement,
 };
