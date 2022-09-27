@@ -1,0 +1,38 @@
+@import 'variables';
+
+.h-title {
+    position: relative;
+    top: 67px;
+    left: 94px;
+    font-family: $HelveticaNeue;
+    font-size: 44px;
+    font-weight: 900;
+    color: $Black;
+}
+
+.form{
+    .f-title{
+        position: relative;
+        top: 73px;
+        left: 94px;
+        margin: auto;
+        padding-right: 10px;
+        font-family: $HelveticaNeue;
+        font-size: 16px;
+        font-weight: bold;
+        color: $Gray;
+    }
+
+    .f-check {
+        position: relative;
+        top: 73px;
+        left: 94px;
+        input {
+            margin-right: 10px;
+        }
+        label {
+            margin-right: 24px;
+        }
+    }
+}
+

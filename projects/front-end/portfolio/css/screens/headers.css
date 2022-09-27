@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap");
+/**
+*
+* Testing
+*
+**/
+.icon {
+  margin: 10px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 65px;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 5rem;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: #fff;
+}
+
+.back {
+  background-image: url("./img/back.png");
+  background-size: cover;
+  border-radius: 15px;
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1001px) {
+  .back:hover {
+    -webkit-animation: back 5s ease-out both;
+    animation: back 5s ease-out both;
+  }
+  @-webkit-keyframes back {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 84%;
+      transform-origin: 50% 84%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(15px);
+      transform: scale(1.25) translateY(15px);
+      -webkit-transform-origin: bottom;
+      transform-origin: bottom;
+    }
+  }
+  @keyframes back {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 84%;
+      transform-origin: 50% 84%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(15px);
+      transform: scale(1.25) translateY(15px);
+      -webkit-transform-origin: bottom;
+      transform-origin: bottom;
+    }
+  }
+}
+/*# sourceMappingURL=headers.css.map */
