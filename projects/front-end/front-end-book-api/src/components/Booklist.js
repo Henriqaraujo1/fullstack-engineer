@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CalendarComponent from './calendar';
+import CalendarComponent from './Calendar';
 import Book from './Book';
 import {
   getBooks,
