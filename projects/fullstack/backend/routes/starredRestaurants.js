@@ -49,13 +49,16 @@ router.get("/", (req, res) => {
  * Feature 7: Getting a specific starred restaurant.
  */
 router.get("/:id", (req, res, next) => {
-  const { id } = req.params.id;
+  const { id } = req.params;
 
-  const findRestaurant = STARRED_RESTAURANTS.find(
+  const restaurant = STARRED_RESTAURANTS.find(
     (restaurant) => restaurant.id === id
   );
-
-  res.json(findRestaurant);
+  if (!restaurant) {
+    res.sendStatus(404);
+    return;
+  }
+  res.json(restaurant);
 });
 
 /**
@@ -79,7 +82,7 @@ router.post("/", (req, res) => {
 
   const newStarredRestaurant = {
     id: newId,
-    restaurantId: restaurant.id,
+    restaurantId: createNewRestaurant.id,
     comment: null,
   };
 
@@ -95,9 +98,41 @@ router.post("/", (req, res) => {
 /**
  * Feature 9: Deleting from your list of starred restaurants.
  */
+router.delete("/:id", (req, res) => {
+  const { id } = req.params;
+
+  const deleteRestaurante = STARRED_RESTAURANTS.filter(
+    (restaurant) => restaurant.id !== id
+  );
+
+  if (STARRED_RESTAURANTS.length === deleteRestaurante.length) {
+    res.sendStatus(404);
+    return;
+  }
+
+  STARRED_RESTAURANTS = deleteRestaurante;
+
+  res.sendStatus(200);
+});
 
 /**
  * Feature 10: Updating your comment of a starred restaurant.
  */
+router.put("/:id", (req, res) => {
+  const { id } = req.params;
+  const { newComment } = req.body;
+
+  const findRestaurant = STARRED_RESTAURANTS.find(
+    (restaurant) => restaurant.id === id
+  );
+
+  if (!findRestaurant) {
+    res.sendStatus(404);
+    return;
+  }
+  findRestaurant.comment = newComment;
+
+  res.sendStatus(200);
+});
 
 module.exports = router;
